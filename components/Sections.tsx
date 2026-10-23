@@ -2,6 +2,7 @@
 import {useState} from "react";
 import dynamic from "next/dynamic";
 import {motion,useReducedMotion} from "framer-motion";
+import Link from "next/link";
 import {Menu,X,ArrowUpRight,ArrowDown} from "lucide-react";
 import {profile,projects,steps,journey,skills} from "@/lib/data";
 import Lab from "./Lab";
@@ -9,19 +10,19 @@ const Scanner=dynamic(()=>import("./Scanner"),{ssr:false,loading:()=><div classN
 function R({children,className="",d=0}:{children:React.ReactNode;className?:string;d?:number}){const rm=useReducedMotion();return <motion.div className={className} initial={rm?false:{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true,margin:"-60px"}} transition={{duration:.5,delay:d}}>{children}</motion.div>}
 const Pending=({t="To be added"}:{t?:string})=><span className="text-ink/55 border-b border-dashed border-ink/30">{t}</span>;
 function Head({n,t,sub}:{n:string;t:string;sub?:string}){return <R className="mb-10 md:mb-14 grid md:grid-cols-12 gap-4"><p className="label text-cobalt md:col-span-2">{n}</p><div className="md:col-span-10"><h2 className="font-display text-5xl md:text-7xl leading-[.95]">{t}</h2>{sub&&<p className="mt-4 max-w-xl text-ink/70">{sub}</p>}</div></R>}
-const links=[["About","#about"],["Work","#work"],["Testing Lab","#lab"],["Journey","#journey"],["Contact","#contact"]];
+const links=[["About","/aboutus"],["Work","/projects"],["Testing Lab","/testing-lab"],["Journey","/skills"],["Contact","/contactus"]];
 export function Nav(){const [o,setO]=useState(false);return <header className="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-ink/20"><nav aria-label="Primary" className="mx-auto max-w-7xl px-5 h-16 flex items-center justify-between">
-<a href="#top" className="font-display text-2xl">Saquib<span className="text-cobalt">.</span></a>
-<ul className="hidden md:flex gap-8 label">{links.map(([l,h])=><li key={h}><a href={h} className="hover:text-cobalt">{l}</a></li>)}</ul>
+<Link href="/" className="font-display text-2xl">Saquib<span className="text-cobalt">.</span></Link>
+<ul className="hidden md:flex gap-8 label">{links.map(([l,h])=><li key={h}><Link href={h} className="hover:text-cobalt">{l}</Link></li>)}</ul>
 <div className="flex items-center gap-3"><a href={profile.resume} className="label border border-ink px-4 py-2 hover:bg-ink hover:text-paper transition">Resume</a>
 <button className="md:hidden p-2" aria-expanded={o} aria-label="Toggle menu" onClick={()=>setO(!o)}>{o?<X/>:<Menu/>}</button></div></nav>
-{o&&<ul className="md:hidden border-t border-ink/20 px-5 py-4 space-y-3 bg-paper">{links.map(([l,h])=><li key={h}><a href={h} onClick={()=>setO(false)} className="font-display text-3xl">{l}</a></li>)}</ul>}</header>}
+{o&&<ul className="md:hidden border-t border-ink/20 px-5 py-4 space-y-3 bg-paper">{links.map(([l,h])=><li key={h}><Link href={h} onClick={()=>setO(false)} className="font-display text-3xl">{l}</Link></li>)}</ul>}</header>}
 export function Hero(){return <section id="top" className="mx-auto max-w-7xl px-5 pt-10 md:pt-16 pb-20 grid md:grid-cols-12 gap-8 items-end">
 <div className="md:col-span-7">
 <p className="label flex items-center gap-2"><span className="h-2 w-2 bg-cobalt"/>Open to QA · SDET · Test automation internships</p>
 <h1 className="font-display text-[clamp(3.6rem,11vw,9.5rem)] leading-[.88] mt-6 tracking-tight">I <span className="text-cobalt italic underline decoration-peach decoration-[.05em] underline-offset-[.08em]">break</span><br/>software<br/>to make it <em>better.</em></h1>
 <p className="mt-8 max-w-md text-lg text-ink/75">QA engineer in progress. Building toward SDET through real-world testing, automation and better engineering practices.</p>
-<div className="mt-8 flex flex-wrap gap-3"><a href="#work" className="bg-cobalt text-paper px-6 py-3 inline-flex items-center gap-2 hover:bg-ink transition">Explore projects <ArrowDown size={16}/></a><a href={profile.resume} className="border border-ink px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition">View resume <ArrowUpRight size={16}/></a></div></div>
+<div className="mt-8 flex flex-wrap gap-3"><Link href="/projects" className="bg-cobalt text-paper px-6 py-3 inline-flex items-center gap-2 hover:bg-ink transition">Explore projects <ArrowDown size={16}/></Link><a href={profile.resume} className="border border-ink px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition">View resume <ArrowUpRight size={16}/></a></div></div>
 <div className="md:col-span-5 md:translate-y-6 bg-lav/50 border border-ink p-4"><Scanner/></div></section>}
 export function About(){return <section id="about" className="bg-sage/40 border-y border-ink/20"><div className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="01 — About" t="Testing is how I learn software."/>
 <div className="grid md:grid-cols-[4fr_6fr] gap-14 items-center"><figure className="max-w-[380px] justify-self-center m-0"><div className="relative border border-ink bg-peach aspect-[4/5] shadow-[14px_14px_0_#1F3FD6] transition hover:-translate-x-1 hover:-translate-y-1"><img src="/saquib.jpg" width={520} height={650} alt="Portrait of Mohd Saquib Mohd Aarif in a dark suit, arms crossed" className="h-full w-full object-cover"/><span className="absolute left-3 bottom-3 label bg-paper border border-ink px-2 py-1 normal-case">expect(curiosity).toBeTruthy()</span></div><figcaption className="label mt-7 text-ink/60">Mohd Saquib · TY BSc IT · QA intern</figcaption></figure><R className="space-y-4 text-lg"><p>I'm Mohd Saquib Mohd Aarif, a TY BSc IT student pursuing my degree while working as a Junior Software Developer Intern at Nexcore Alliance LLP.</p><p>There I'm on a live software project with QA testing responsibilities: functional, sanity, regression and exploratory testing on real mobile and web applications, plus API testing with Postman.</p><p>I'm aiming for QA Engineer / SDET Intern / Junior SDET roles, with test automation, CI/CD and AI-assisted testing as the long-term direction.</p></R></div></div></section>}
