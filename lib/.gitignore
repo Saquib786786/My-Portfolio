@@ -1,0 +1,5 @@
+echo "node_modules/" > .gitignore
+
+# Also add common Next.js build outputs to keep your repo clean
+echo ".next/" >> .gitignore
+echo ".env*.local" >> .gitignore

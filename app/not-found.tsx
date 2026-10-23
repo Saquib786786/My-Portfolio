@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NF(){return <main className="min-h-screen grid place-items-center p-8"><div><p className="label text-cobalt">Error 404 · Expected: page. Actual: nothing.</p><h1 className="font-display text-7xl md:text-9xl mt-4">Defect found.</h1><Link href="/" className="inline-block mt-8 border border-ink px-5 py-3 hover:bg-ink hover:text-paper transition">Back to home</Link></div></main>}
