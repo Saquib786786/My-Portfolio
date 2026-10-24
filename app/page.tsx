@@ -1,27 +1,26 @@
 import type { Metadata } from "next";
-import { Nav, Hero, About, Work, LabSection, Approach, Journey, Skills, Contact } from "@/components/Sections";
+import { Nav, Hero, About, Work, LabSection, Approach, Journey, Skills, RecruiterFAQ, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
+  title: "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai (Manual & Automation Tester)",
   description:
-    "Mohd Saquib Mohd Aarif — QA Engineer & Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai). Specializing in manual QA, Playwright test automation, Postman API testing, and defect tracking.",
+    "Mohd Saquib Mohd Aarif — QA Engineer & Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai). Specializing in manual QA testing passes, Playwright test automation with TypeScript, Postman API testing, and defect reproduction.",
   keywords: [
+    "QA Engineer in Mumbai",
+    "SDET in Mumbai",
     "Mohd Saquib Mohd Aarif",
     "Mohd Saquib",
     "Mohd Saquib QA Engineer",
     "Mohd Saquib SDET",
-    "Mohd Saquib portfolio",
-    "QA Engineer in Mumbai",
-    "SDET Intern in Mumbai",
     "Junior SDET Mumbai",
-    "Software Tester in Mumbai",
     "QA Tester in Mumbai",
+    "Software Tester in Mumbai",
     "Nexcore Alliance LLP",
     "Nexcore Alliance QA Intern",
-    "Manual Testing Engineer",
-    "Playwright Automation Tester",
+    "Manual Testing Engineer Mumbai",
+    "Playwright Automation Tester Mumbai",
     "Playwright Test Automation",
-    "Postman API Testing",
+    "Postman API Testing Mumbai",
     "API Testing Engineer Mumbai",
     "Functional Testing",
     "Sanity Testing",
@@ -29,12 +28,10 @@ export const metadata: Metadata = {
     "Exploratory Testing",
     "Bug Reporting",
     "Software Development Engineer in Test",
-    "hire QA Engineer Mumbai",
-    "hire SDET intern",
-    "Software QA Intern",
-    "TypeScript QA",
-    "JavaScript Testing",
-    "QA Portfolio",
+    "Hire QA Engineer Mumbai",
+    "Hire SDET intern Mumbai",
+    "TypeScript QA Tester",
+    "QA Portfolio Mumbai",
     "Mohd Saquib resume",
     "Mohd Saquib GitHub",
     "Mohd Saquib LinkedIn",
@@ -45,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
     description:
-      "I break software to make it better. QA Engineer in progress, building toward SDET with real-world testing, Playwright automation, and Postman API testing.",
+      "QA Engineer & Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai). Manual QA testing, Playwright automation, Postman API testing, and bug tracking.",
     url: "/",
     siteName: "Mohd Saquib Portfolio",
     images: [
@@ -53,7 +50,7 @@ export const metadata: Metadata = {
         url: "/saquib.jpg",
         width: 1200,
         height: 630,
-        alt: "Mohd Saquib Mohd Aarif - QA Engineer & SDET",
+        alt: "Mohd Saquib Mohd Aarif - QA Engineer & SDET in Mumbai",
       },
     ],
     locale: "en_IN",
@@ -80,6 +77,7 @@ export default function Page() {
         <Approach />
         <Journey />
         <Skills />
+        <RecruiterFAQ />
       </main>
       <Contact />
     </>

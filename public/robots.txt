@@ -1,15 +1,36 @@
-# robots.txt for Mohd Saquib Portfolio (Adapted for Next.js)
-# Allow all search engine bots full access for indexing and rich results
+# robots.txt for Mohd Saquib Portfolio (Next.js)
+# QA Engineer & SDET in Mumbai — Full Access for Search Engines & AI Models
+
 User-agent: *
 Allow: /
 
-# Prevent indexing of internal endpoints or feeds if added
+# Explicitly welcome AI & Answer Engine bots for AEO / GEO ranking
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Prevent indexing of non-existent internal endpoints
 Disallow: /api/
-Disallow: /feed
 Disallow: /cgi-bin/
 
-# Do NOT block images or uploads – needed for rich results
-# All service pages, articles, and media are accessible
-
-# Sitemap location
+# Sitemaps & AI Manifests
 Sitemap: https://saquib-portfolio-dev.vercel.app/sitemap.xml
+# LLM Manifest for Generative Engine Optimization
+# https://saquib-portfolio-dev.vercel.app/llms.txt

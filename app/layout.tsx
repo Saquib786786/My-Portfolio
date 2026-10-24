@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { recruiterFaqs, profile, type FAQItem } from "@/lib/data";
 import "./globals.css";
 
 const d = Instrument_Serif({ weight: "400", style: ["normal", "italic"], subsets: ["latin"], variable: "--f-display" });
@@ -8,9 +9,9 @@ const s = Hanken_Grotesk({ subsets: ["latin"], variable: "--f-sans" });
 const m = JetBrains_Mono({ subsets: ["latin"], variable: "--f-mono" });
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://saquib-portfolio-dev.vercel.app";
-const defaultTitle = "Mohd Saquib Mohd Aarif — QA Engineer & SDET Portfolio";
+const defaultTitle = "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai";
 const defaultDesc =
-  "Portfolio of Mohd Saquib Mohd Aarif, Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai). Specializing in manual QA testing, Playwright automation, Postman API testing, and defect tracking.";
+  "Mohd Saquib Mohd Aarif is a Software QA Engineer & SDET based in Mumbai, Maharashtra. Junior Software Developer Intern at Nexcore Alliance LLP specializing in manual QA testing, Playwright test automation with TypeScript, Postman API testing, and defect reproduction.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -20,21 +21,29 @@ export const metadata: Metadata = {
   },
   description: defaultDesc,
   keywords: [
+    "QA Engineer in Mumbai",
+    "SDET in Mumbai",
     "Mohd Saquib Mohd Aarif",
-    "Mohd Saquib",
-    "QA Engineer",
-    "SDET Intern",
-    "Software Development Engineer in Test",
+    "Mohd Saquib QA Engineer",
+    "Junior SDET Mumbai",
     "QA Tester Mumbai",
+    "Software Tester in Mumbai",
     "Nexcore Alliance LLP",
-    "Manual Testing",
-    "Playwright Automation",
-    "Postman API Testing",
+    "Nexcore Alliance QA Intern",
+    "Manual Testing Engineer Mumbai",
+    "Playwright Automation Tester",
+    "Playwright Test Automation",
+    "Postman API Testing Mumbai",
     "Functional Testing",
     "Regression Testing",
+    "Sanity Testing",
+    "Exploratory Testing",
     "Bug Reporting",
-    "Software Testing Portfolio",
-    "Mumbai Software Tester",
+    "Software Development Engineer in Test",
+    "Hire QA Engineer Mumbai",
+    "Hire SDET intern Mumbai",
+    "TypeScript QA Tester",
+    "Software Testing Portfolio Mumbai",
   ],
   authors: [{ name: "Mohd Saquib Mohd Aarif", url: baseUrl }],
   creator: "Mohd Saquib Mohd Aarif",
@@ -54,7 +63,7 @@ export const metadata: Metadata = {
         url: "/saquib.jpg",
         width: 1200,
         height: 630,
-        alt: "Mohd Saquib Mohd Aarif - QA Engineer & SDET",
+        alt: "Mohd Saquib Mohd Aarif - QA Engineer & SDET in Mumbai",
       },
     ],
   },
@@ -80,35 +89,102 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
+const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Mohd Saquib Mohd Aarif",
-  alternateName: "Mohd Saquib",
-  jobTitle: "Junior Software Developer Intern & QA Engineer",
-  worksFor: {
-    "@type": "Organization",
-    name: "Nexcore Alliance LLP",
-  },
-  url: baseUrl,
-  image: `${baseUrl}/saquib.jpg`,
-  description: defaultDesc,
-  knowsAbout: [
-    "Software Quality Assurance (QA)",
-    "Manual Testing",
-    "Playwright Test Automation",
-    "Postman API Testing",
-    "Regression Testing",
-    "Defect Reproduction",
-    "TypeScript",
-    "JavaScript",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${baseUrl}/#website`,
+      url: baseUrl,
+      name: "Mohd Saquib Mohd Aarif — QA Engineer & SDET Portfolio",
+      description: defaultDesc,
+      publisher: {
+        "@id": `${baseUrl}/#person`,
+      },
+      inLanguage: "en-IN",
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${baseUrl}/#webpage`,
+      url: baseUrl,
+      name: defaultTitle,
+      isPartOf: {
+        "@id": `${baseUrl}/#website`,
+      },
+      about: {
+        "@id": `${baseUrl}/#person`,
+      },
+      mainEntity: {
+        "@id": `${baseUrl}/#person`,
+      },
+      description: defaultDesc,
+    },
+    {
+      "@type": "Person",
+      "@id": `${baseUrl}/#person`,
+      name: "Mohd Saquib Mohd Aarif",
+      alternateName: ["Mohd Saquib", "Saquib Aarif", "Mohd Saquib QA"],
+      jobTitle: "QA Engineer & SDET",
+      description: defaultDesc,
+      url: baseUrl,
+      image: `${baseUrl}/saquib.jpg`,
+      email: `mailto:${profile.email}`,
+      sameAs: [
+        profile.github,
+        profile.linkedin,
+        baseUrl,
+      ].filter(Boolean),
+      worksFor: {
+        "@type": "Organization",
+        name: "Nexcore Alliance LLP",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Mumbai",
+          addressRegion: "Maharashtra",
+          addressCountry: "IN",
+        },
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Mumbai",
+        addressRegion: "Maharashtra",
+        addressCountry: "IN",
+      },
+      hasOccupation: {
+        "@type": "Occupation",
+        name: "Software Quality Assurance Engineer / SDET",
+        occupationalCategory: "15-1253.00",
+        skills: "Playwright Automation, Postman API Testing, Manual Testing, Functional Testing, Regression Testing, Defect Lifecycle, TypeScript, Bug Reporting",
+      },
+      knowsAbout: [
+        "Software Quality Assurance (QA)",
+        "Software Development Engineer in Test (SDET)",
+        "Manual QA Testing",
+        "Playwright Test Automation",
+        "Postman API Testing",
+        "Regression Testing",
+        "Functional Testing",
+        "Sanity Testing",
+        "Exploratory Testing",
+        "Defect Lifecycle & Bug Reporting",
+        "TypeScript",
+        "JavaScript",
+        "QA Testing in Mumbai",
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${baseUrl}/#faq`,
+      mainEntity: recruiterFaqs.map((faq: FAQItem) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.a,
+        },
+      })),
+    },
   ],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Mumbai",
-    addressRegion: "Maharashtra",
-    addressCountry: "IN",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -118,7 +194,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(personSchema),
+            __html: JSON.stringify(structuredData),
           }}
         />
       </head>
