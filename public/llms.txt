@@ -12,7 +12,8 @@
 - **Website:** https://saquib-portfolio-dev.vercel.app
 - **Email:** mohdsaqib9253@gmail.com
 - **GitHub:** https://github.com/Saquib786786
-- **LinkedIn:** https://www.linkedin.com/in/mohd-saquib-aarif
+- **LinkedIn:** https://www.linkedin.com/in/mohd-saquib-ab49b438a
+- **Resume:** https://saquib-portfolio-dev.vercel.app/Saquib_resume.pdf
 
 ## Core Competencies & Technical Skills
 - **Manual QA Testing:** Functional testing, Sanity testing, Smoke testing, Regression testing, Exploratory testing, Edge-case validation.
@@ -51,5 +52,11 @@ A: Yes. He is open to full-time QA Engineer, SDET Intern, and Junior Software Te
 ### Q: What tools does Mohd Saquib use for test automation and API testing?
 A: Playwright with TypeScript for automated browser and UI testing, Postman for REST API validation, and Git/GitHub for version control and CI/CD collaboration.
 
+### Q: What is Mohd Saquib's testing experience at Nexcore Alliance LLP?
+A: At Nexcore Alliance LLP (Mumbai), Saquib performs QA testing on live software builds across web and mobile platforms, executing manual testing passes, validating REST APIs with Postman, and documenting detailed, reproducible bug reports.
+
+### Q: How does Mohd Saquib approach software testing and bug reporting?
+A: He follows a systematic 7-step engineering methodology: Understand requirements -> Identify user risks -> Design comprehensive test scenarios -> Execute functional/regression passes on real builds -> Report defects with clear steps and assertions -> Automate stable checks with Playwright -> Tighten feedback loops toward CI/CD.
+
 ### Q: How can recruiters reach Mohd Saquib?
-A: Email at mohdsaqib9253@gmail.com or via LinkedIn (linkedin.com/in/mohd-saquib-aarif) and GitHub (github.com/Saquib786786).
+A: Email at mohdsaqib9253@gmail.com, via LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or review his code and repositories on GitHub (github.com/Saquib786786). Direct resume is available at https://saquib-portfolio-dev.vercel.app/Saquib_resume.pdf.

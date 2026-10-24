@@ -2,9 +2,9 @@
 export const profile = {
   name: "Mohd Saquib Mohd Aarif",
   email: "mohdsaqib9253@gmail.com",
-  linkedin: "https://www.linkedin.com/in/mohd-saquib-aarif",
+  linkedin: "https://www.linkedin.com/in/mohd-saquib-ab49b438a",
   github: "https://github.com/Saquib786786",
-  resume: "/resume.pdf",
+  resume: "/Saquib_resume.pdf",
   location: "Mumbai, Maharashtra, India",
   headline: "QA Engineer & SDET in Mumbai | Manual & Automation Tester",
   currentRole: "Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai)",
@@ -40,7 +40,7 @@ export const recruiterFaqs: FAQItem[] = [
   },
   {
     q: "How can recruiters and engineering managers contact Mohd Saquib?",
-    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-aarif), or inspect his code and repositories on GitHub (@Saquib786786).",
+    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or inspect his code and repositories on GitHub (@Saquib786786).",
   },
 ];
 export type Project = { id: string; name: string; status: string; kind: string; context: string; role?: string; stack?: string[]; tested?: string[]; repo?: string; live?: string };
