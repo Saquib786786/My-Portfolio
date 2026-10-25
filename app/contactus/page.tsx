@@ -5,15 +5,6 @@ export const metadata: Metadata = {
   title: "Contact Mohd Saquib | QA Engineer & SDET in Mumbai",
   description:
     "Contact Mohd Saquib Mohd Aarif for QA Engineer and SDET Intern roles in Mumbai. Open to manual testing, Playwright automation, and API QA opportunities.",
-  keywords: [
-    "Contact Mohd Saquib",
-    "Hire QA Engineer Mumbai",
-    "Hire SDET Intern",
-    "Software Tester Contact",
-    "Mohd Saquib Email",
-    "Mohd Saquib LinkedIn",
-    "Mohd Saquib GitHub",
-  ],
   alternates: {
     canonical: "/contactus",
   },

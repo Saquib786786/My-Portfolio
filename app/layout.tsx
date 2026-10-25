@@ -20,31 +20,6 @@ export const metadata: Metadata = {
     template: "%s | Mohd Saquib Mohd Aarif",
   },
   description: defaultDesc,
-  keywords: [
-    "QA Engineer in Mumbai",
-    "SDET in Mumbai",
-    "Mohd Saquib Mohd Aarif",
-    "Mohd Saquib QA Engineer",
-    "Junior SDET Mumbai",
-    "QA Tester Mumbai",
-    "Software Tester in Mumbai",
-    "Nexcore Alliance LLP",
-    "Nexcore Alliance QA Intern",
-    "Manual Testing Engineer Mumbai",
-    "Playwright Automation Tester",
-    "Playwright Test Automation",
-    "Postman API Testing Mumbai",
-    "Functional Testing",
-    "Regression Testing",
-    "Sanity Testing",
-    "Exploratory Testing",
-    "Bug Reporting",
-    "Software Development Engineer in Test",
-    "Hire QA Engineer Mumbai",
-    "Hire SDET intern Mumbai",
-    "TypeScript QA Tester",
-    "Software Testing Portfolio Mumbai",
-  ],
   authors: [{ name: "Mohd Saquib Mohd Aarif", url: baseUrl }],
   creator: "Mohd Saquib Mohd Aarif",
   publisher: "Mohd Saquib Mohd Aarif",
@@ -221,7 +196,7 @@ const structuredData = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${d.variable} ${s.variable} ${m.variable}`}>
+    <html lang="en-IN" className={`${d.variable} ${s.variable} ${m.variable}`}>
       <head>
         <script
           type="application/ld+json"

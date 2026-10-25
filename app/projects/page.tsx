@@ -5,16 +5,6 @@ export const metadata: Metadata = {
   title: "Selected QA Projects | Mohd Saquib Mohd Aarif",
   description:
     "Explore QA testing projects, Playwright test automation labs, API tests, and verified bug reproductions authored by Mohd Saquib Mohd Aarif.",
-  keywords: [
-    "QA Projects",
-    "Playwright Automation Lab",
-    "Workflow Task App Testing",
-    "Kisan Rate Saathi Testing",
-    "Postman API Test Scenarios",
-    "Test Automation Case Studies",
-    "Bug Reproduction Reports",
-    "Mohd Saquib Projects",
-  ],
   alternates: {
     canonical: "/projects",
   },

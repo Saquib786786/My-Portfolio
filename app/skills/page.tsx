@@ -5,17 +5,6 @@ export const metadata: Metadata = {
   title: "QA Skills & Journey | Mohd Saquib Mohd Aarif",
   description:
     "Explore technical skills of Mohd Saquib Mohd Aarif: Manual QA, Postman API testing, Playwright automation, TypeScript, and engineering workflow.",
-  keywords: [
-    "QA Skills",
-    "Playwright Automation",
-    "Postman API Testing",
-    "Manual QA Skills",
-    "Regression Testing",
-    "Sanity Testing",
-    "Exploratory Testing",
-    "TypeScript QA",
-    "Software QA Career Journey",
-  ],
   alternates: {
     canonical: "/skills",
   },

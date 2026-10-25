@@ -5,15 +5,6 @@ export const metadata: Metadata = {
   title: "Interactive Testing Lab & Bug Reproduction | Mohd Saquib",
   description:
     "Interactive QA testing lab: filter by severity, step through reproduction steps, and inspect QA assertions by Mohd Saquib Mohd Aarif.",
-  keywords: [
-    "QA Testing Lab",
-    "Bug Reproduction Explorer",
-    "Defect Tracking",
-    "Interactive Bug Lab",
-    "Severity Classification QA",
-    "Assertion Verification",
-    "Software Defect Reproduction",
-  ],
   alternates: {
     canonical: "/testing-lab",
   },

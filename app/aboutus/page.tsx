@@ -5,15 +5,6 @@ export const metadata: Metadata = {
   title: "About Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
   description:
     "Learn about Mohd Saquib Mohd Aarif, TY BSc IT student & QA intern at Nexcore Alliance LLP specializing in manual QA, Playwright & Postman API testing.",
-  keywords: [
-    "About Mohd Saquib",
-    "Mohd Saquib Mohd Aarif Bio",
-    "QA Intern Nexcore Alliance",
-    "BSc IT Student Mumbai",
-    "Junior SDET Mumbai",
-    "Software Tester Bio",
-    "QA Engineer Profile",
-  ],
   alternates: {
     canonical: "/aboutus",
   },
