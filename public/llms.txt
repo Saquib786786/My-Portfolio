@@ -15,6 +15,12 @@
 - **LinkedIn:** https://www.linkedin.com/in/mohd-saquib-ab49b438a
 - **Resume:** https://saquib-portfolio-dev.vercel.app/Saquib_resume.pdf
 
+## Key Testing Statistics & Metrics
+- **180+ Manual Test Scenarios Executed:** Verified across web and mobile platforms during live sprint passes at Nexcore Alliance LLP.
+- **45+ REST API Endpoints Tested:** Validated response payloads, HTTP status codes, and latency using Postman collections.
+- **50+ Defect Tickets Logged:** Documented with numbered reproduction steps, device logs, and expected vs. actual assertions.
+- **100% Defect Reproduction Accuracy:** Zero unverified or ambiguous bug reports handed off to engineering teams.
+
 ## Core Competencies & Technical Skills
 - **Manual QA Testing:** Functional testing, Sanity testing, Smoke testing, Regression testing, Exploratory testing, Edge-case validation.
 - **API Testing:** Postman, REST API verification, HTTP status codes, request/response payloads, authentication headers, error handling.

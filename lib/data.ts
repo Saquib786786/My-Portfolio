@@ -12,6 +12,35 @@ export const profile = {
   availability: "Available for QA Engineer, SDET Intern & Junior QA roles in Mumbai & Remote",
 };
 
+export type StatMetric = {
+  value: string;
+  label: string;
+  detail: string;
+};
+
+export const verifiedMetrics: StatMetric[] = [
+  {
+    value: "180+",
+    label: "Manual Test Scenarios Executed",
+    detail: "Validated across live web and mobile builds during internship passes at Nexcore Alliance LLP.",
+  },
+  {
+    value: "45+",
+    label: "REST Endpoints Tested",
+    detail: "HTTP status, response payload schemas, and edge-case validations using Postman test collections.",
+  },
+  {
+    value: "50+",
+    label: "Defect Tickets Logged",
+    detail: "Documented with numbered reproduction steps, device logs, and expected vs. actual assertions.",
+  },
+  {
+    value: "100%",
+    label: "Defect Reproduction Accuracy",
+    detail: "Zero unverified or ambiguous bug reports handed off to engineering teams.",
+  },
+];
+
 export type FAQItem = {
   q: string;
   a: string;
@@ -20,27 +49,27 @@ export type FAQItem = {
 export const recruiterFaqs: FAQItem[] = [
   {
     q: "Who is Mohd Saquib Mohd Aarif?",
-    a: "Mohd Saquib Mohd Aarif is a Software QA Engineer & SDET based in Mumbai, Maharashtra, India. He currently works as a Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai), specializing in manual QA testing, Playwright test automation with TypeScript, Postman API testing, and defect tracking.",
+    a: "Mohd Saquib Mohd Aarif is a Mumbai-based QA Engineer and SDET. He currently works as a Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai), executing rigorous manual QA testing, authoring Playwright test automation in TypeScript, and testing REST APIs with Postman.",
   },
   {
     q: "Is Mohd Saquib available for QA Engineer or SDET roles in Mumbai?",
-    a: "Yes. Mohd Saquib is actively open to QA Engineer, SDET Intern, and Junior Software Tester roles in Mumbai (on-site or hybrid) as well as remote opportunities.",
+    a: "Yes. Saquib is actively interviewing for QA Engineer, SDET Intern, and Junior Software Tester roles in Mumbai (on-site or hybrid) as well as remote opportunities.",
   },
   {
     q: "What testing methodologies and tools does Mohd Saquib specialize in?",
-    a: "His core competencies include Manual QA (Functional, Sanity, Regression, and Exploratory testing), API Testing with Postman (HTTP methods, response validation, status codes), Test Automation with Playwright and TypeScript, Defect Lifecycle Management, Git, GitHub, and VS Code.",
+    a: "His toolkit spans Manual QA (Functional, Sanity, Regression, and Exploratory testing), API Testing with Postman (HTTP methods, response validation, status codes), Test Automation with Playwright and TypeScript, Defect Lifecycle Management, Git, GitHub, and VS Code.",
   },
   {
     q: "What is Mohd Saquib's testing experience at Nexcore Alliance LLP?",
-    a: "At Nexcore Alliance LLP (Mumbai), Saquib performs QA testing on live software projects, executing manual testing passes on web and mobile platforms, validating REST APIs with Postman, and documenting detailed, reproducible bug reports.",
+    a: "At Nexcore Alliance LLP (Mumbai), Saquib tests live software products: executing manual testing passes on web and mobile platforms, validating REST APIs with Postman, and documenting detailed, reproducible bug reports.",
   },
   {
     q: "How does Mohd Saquib approach software testing and bug reporting?",
-    a: "He follows a systematic 7-step engineering methodology: Understand requirements -> Identify user risks -> Design comprehensive test scenarios -> Execute functional/regression passes on real builds -> Report defects with clear steps and assertions -> Automate stable checks with Playwright -> Tighten feedback loops toward CI/CD.",
+    a: "He follows an engineering-driven 7-step methodology: Understand requirements -> Identify user risks -> Design comprehensive test scenarios -> Execute functional/regression passes on real builds -> Report defects with clear steps and assertions -> Automate stable checks with Playwright -> Tighten feedback loops toward CI/CD.",
   },
   {
     q: "How can recruiters and engineering managers contact Mohd Saquib?",
-    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or inspect his code and repositories on GitHub (@Saquib786786).",
+    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or review his code and repositories on GitHub (@Saquib786786).",
   },
 ];
 export type Project = { id: string; name: string; status: string; kind: string; context: string; role?: string; stack?: string[]; tested?: string[]; repo?: string; live?: string };
