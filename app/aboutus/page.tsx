@@ -4,7 +4,7 @@ import { Nav, About, Contact } from "@/components/Sections";
 export const metadata: Metadata = {
   title: "About Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
   description:
-    "Learn about Mohd Saquib Mohd Aarif, TY BSc IT student and Junior Software Developer Intern at Nexcore Alliance LLP focusing on manual QA, Playwright automation, and Postman API testing.",
+    "Learn about Mohd Saquib Mohd Aarif, TY BSc IT student & QA intern at Nexcore Alliance LLP specializing in manual QA, Playwright & Postman API testing.",
   keywords: [
     "About Mohd Saquib",
     "Mohd Saquib Mohd Aarif Bio",

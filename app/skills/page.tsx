@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Nav, Skills, Journey, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "QA Skills, Automation & Career Journey | Mohd Saquib Mohd Aarif",
+  title: "QA Skills & Journey | Mohd Saquib Mohd Aarif",
   description:
     "Explore technical skills of Mohd Saquib Mohd Aarif: Manual QA, Postman API testing, Playwright automation, TypeScript, and engineering workflow.",
   keywords: [

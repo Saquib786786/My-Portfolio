@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Nav, Hero, About, Work, LabSection, Approach, Journey, Skills, RecruiterFAQ, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai (Manual & Automation Tester)",
+  title: "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
   description:
-    "Mohd Saquib Mohd Aarif — QA Engineer & Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai). Specializing in manual QA testing passes, Playwright test automation with TypeScript, Postman API testing, and defect reproduction.",
+    "Mohd Saquib: QA Engineer & SDET in Mumbai. Junior intern at Nexcore Alliance LLP specializing in manual QA, Playwright automation & Postman API testing.",
   keywords: [
     "QA Engineer in Mumbai",
     "SDET in Mumbai",

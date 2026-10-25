@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Nav, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Contact Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
+  title: "Contact Mohd Saquib | QA Engineer & SDET in Mumbai",
   description:
-    "Get in touch with Mohd Saquib Mohd Aarif for QA Engineer, SDET Intern, manual & automation testing opportunities in Mumbai, Maharashtra, India. Open to software testing roles and internships.",
+    "Contact Mohd Saquib Mohd Aarif for QA Engineer and SDET Intern roles in Mumbai. Open to manual testing, Playwright automation, and API QA opportunities.",
   keywords: [
     "Contact Mohd Saquib",
     "Hire QA Engineer Mumbai",

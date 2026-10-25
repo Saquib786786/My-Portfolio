@@ -11,7 +11,7 @@ const m = JetBrains_Mono({ subsets: ["latin"], variable: "--f-mono" });
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://saquib-portfolio-dev.vercel.app";
 const defaultTitle = "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai";
 const defaultDesc =
-  "Mohd Saquib Mohd Aarif is a Software QA Engineer & SDET based in Mumbai, Maharashtra. Junior Software Developer Intern at Nexcore Alliance LLP specializing in manual QA testing, Playwright test automation with TypeScript, Postman API testing, and defect reproduction.";
+  "Mohd Saquib: QA Engineer & SDET in Mumbai. Junior intern at Nexcore Alliance LLP specializing in manual QA, Playwright automation & Postman API testing.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
