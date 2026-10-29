@@ -2,7 +2,7 @@
 export const profile = {
   name: "Mohd Saquib Mohd Aarif",
   email: "mohdsaqib9253@gmail.com",
-  linkedin: "https://www.linkedin.com/in/mohd-saquib-ab49b438a",
+  linkedin: "https://www.linkedin.com/in/mohd-saquib-ab49b438a/",
   github: "https://github.com/Saquib786786",
   resume: "/Saquib_resume.pdf",
   location: "Mumbai, Maharashtra, India",

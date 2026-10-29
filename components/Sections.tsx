@@ -30,7 +30,27 @@ export function Hero() {
         <h1 className="font-display text-[clamp(3.4rem,10vw,9rem)] leading-[.88] tracking-tight">I <span className="text-cobalt italic underline decoration-peach decoration-[.05em] underline-offset-[.08em]">break</span><br />software<br />to make it <em>better.</em></h1>
         <p className="label text-cobalt mt-4 font-mono">Mohd Saquib Mohd Aarif — QA Engineer & SDET in Mumbai</p>
         <p className="mt-5 max-w-lg text-lg text-ink/80">Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai). Specializing in manual QA testing passes, Playwright test automation with TypeScript, Postman API testing, and defect tracking.</p>
-        <div className="mt-8 flex flex-wrap gap-3"><Link href="/projects" className="bg-cobalt text-paper px-6 py-3 inline-flex items-center gap-2 hover:bg-ink transition">Explore projects <ArrowDown size={16} /></Link><a href={profile.resume} className="border border-ink px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition">View resume <ArrowUpRight size={16} /></a><a href="#faq" className="border border-ink/50 px-6 py-3 inline-flex items-center gap-2 hover:border-ink transition text-ink">Recruiter FAQ</a></div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/projects" className="bg-cobalt text-paper px-6 py-3 inline-flex items-center gap-2 hover:bg-ink transition">
+            Explore projects <ArrowDown size={16} />
+          </Link>
+          <a href={profile.resume} className="border border-ink px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition">
+            View resume <ArrowUpRight size={16} />
+          </a>
+          {profile.linkedin && (
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-ink px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition"
+            >
+              LinkedIn <ArrowUpRight size={16} />
+            </a>
+          )}
+          <a href="#faq" className="border border-ink/50 px-6 py-3 inline-flex items-center gap-2 hover:border-ink transition text-ink">
+            Recruiter FAQ
+          </a>
+        </div>
       </div>
       <div className="md:col-span-5 md:translate-y-6 bg-lav/50 border border-ink p-4"><Scanner /></div>
     </div>
@@ -163,7 +183,7 @@ export function RecruiterFAQ() {
 export function Contact() {
   const L = [["Email", profile.email, `mailto:${profile.email}`], ["LinkedIn", profile.linkedin, profile.linkedin], ["GitHub", profile.github, profile.github]];
   return <footer id="contact" className="bg-cobalt text-paper"><div className="mx-auto max-w-7xl px-5 py-20 md:py-28"><p className="label opacity-80">08 — Contact</p><h2 className="font-display text-[clamp(3rem,10vw,8rem)] leading-[.9] mt-4">Have a build<br />that needs <em>breaking?</em></h2>
-    <ul className="mt-12 grid sm:grid-cols-3 border border-paper/40">{L.map(([l, v, h], i) => <li key={l} className={i ? "sm:border-l border-t sm:border-t-0 border-paper/40" : ""}>{v ? <a href={h} className="block p-5 hover:bg-paper hover:text-cobalt transition"><span className="label">{l}</span><span className="flex items-center justify-between mt-2 text-lg break-all">{v.replace(/^https?:\/\//, "")}<ArrowUpRight size={18} /></span></a> : <div className="p-5 opacity-80"><span className="label">{l}</span><p className="mt-2">Coming soon</p></div>}</li>)}</ul>
+    <ul className="mt-12 grid sm:grid-cols-3 border border-paper/40">{L.map(([l, v, h], i) => <li key={l} className={i ? "sm:border-l border-t sm:border-t-0 border-paper/40" : ""}>{v ? <a href={h} target={h.startsWith("http") ? "_blank" : undefined} rel={h.startsWith("http") ? "noopener noreferrer" : undefined} className="block p-5 hover:bg-paper hover:text-cobalt transition"><span className="label">{l}</span><span className="flex items-center justify-between mt-2 text-lg break-all">{v.replace(/^https?:\/\//, "").replace(/\/$/, "")}<ArrowUpRight size={18} /></span></a> : <div className="p-5 opacity-80"><span className="label">{l}</span><p className="mt-2">Coming soon</p></div>}</li>)}</ul>
     <p className="label mt-12 opacity-80">© {new Date().getFullYear()} {profile.name} · QA Engineer & SDET in Mumbai</p></div></footer>
 }
 
