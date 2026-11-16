@@ -299,17 +299,16 @@ export function RecruiterFAQ() {
                       <ChevronDown size={18} />
                     </span>
                   </button>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="pt-4 text-base md:text-lg text-ink/80 leading-relaxed max-w-3xl"
-                    >
-                      <p>{faq.a}</p>
-                    </motion.div>
-                  )}
+                  <div
+                    id={`faq-answer-${idx}`}
+                    className={`overflow-hidden transition-all duration-300 ${
+                      isOpen ? "max-h-96 opacity-100 pt-4" : "max-h-0 opacity-0 pointer-events-none"
+                    }`}
+                  >
+                    <p className="text-base md:text-lg text-ink/80 leading-relaxed max-w-3xl">
+                      {faq.a}
+                    </p>
+                  </div>
                 </div>
               );
             })}

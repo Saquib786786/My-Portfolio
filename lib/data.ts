@@ -49,27 +49,27 @@ export type FAQItem = {
 export const recruiterFaqs: FAQItem[] = [
   {
     q: "Who is Mohd Saquib Mohd Aarif?",
-    a: "Mohd Saquib is a Software Engineer based in Mumbai. He works on live web applications at Nexcore Alliance LLP. His focus is web performance, fast load times, and technical SEO. He builds clean frontend interfaces and helps websites rank on Google and AI search engines.",
+    a: "I am a Software Engineer based in Mumbai, currently developing and testing live web applications at Nexcore Alliance LLP. My primary engineering focus is building fast frontend experiences, optimizing Core Web Vitals, and implementing Technical SEO so websites rank at the top of Google and AI answer engines.",
   },
   {
     q: "Is Mohd Saquib available for Software Engineering and SEO/Performance roles in Mumbai?",
-    a: "Yes. Saquib is open to full-time roles in Mumbai and remote positions worldwide. He is interviewing for Software Engineer, Frontend Developer, and Web Performance roles.",
+    a: "Yes. I am actively looking for full-time software engineering roles in Mumbai and remote opportunities worldwide. I specialize in frontend development, performance tuning, and technical SEO architecture.",
   },
   {
     q: "What technical competencies and tools does Mohd Saquib specialize in?",
-    a: "Saquib builds with TypeScript, JavaScript, React, and Next.js. He speeds up web pages using Core Web Vitals best practices. He also sets up JSON-LD schema, sitemaps, and REST APIs with Postman.",
+    a: "I write clean, modern code using TypeScript, JavaScript, React, and Next.js. For web performance, I profile and optimize Core Web Vitals (LCP, INP, and CLS) using Chrome DevTools. I also architect structured JSON-LD schemas, sitemaps, and test REST API endpoints with Postman.",
   },
   {
     q: "What is Mohd Saquib's engineering experience at Nexcore Alliance LLP?",
-    a: "At Nexcore Alliance LLP, Saquib builds and tests live web software. He creates responsive layouts, improves page speed, and tests APIs. He also optimizes sites so search engines can find and index them quickly.",
+    a: "At Nexcore Alliance, I build and test live production software across web and mobile platforms. My work involves creating responsive UI components, tuning load times, testing REST APIs with Postman, and implementing structured schemas to ensure fast indexing by search engines.",
   },
   {
     q: "How does Mohd Saquib approach software engineering, performance, and SEO?",
-    a: "Saquib follows a simple seven-step plan. First, he reviews requirements. Next, he designs clean code and sets performance budgets. Then, he ships code to live builds, adds structured data, and tunes page speed. Finally, he adds automated checks to prevent regressions.",
+    a: "I follow a practical seven-step workflow: first, I analyze the product requirements and set performance budgets. Next, I design clean semantic HTML and build modular components in TypeScript. Then, I optimize bundles, test APIs, inject structured data schemas, and write automated tests to prevent regressions.",
   },
   {
     q: "How can recruiters and engineering managers contact Mohd Saquib?",
-    a: "You can email him at mohdsaqib9253@gmail.com. You can also connect on LinkedIn or check his GitHub repositories under @Saquib786786.",
+    a: "You can reach me directly via email at mohdsaqib9253@gmail.com. I am also active on LinkedIn and regularly push code and technical projects to my GitHub profile under @Saquib786786.",
   },
 ];
 export type Project = { id: string; name: string; status: string; kind: string; context: string; role?: string; stack?: string[]; tested?: string[]; repo?: string; live?: string };

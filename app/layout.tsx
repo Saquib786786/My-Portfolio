@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   creator: "Mohd Saquib Mohd Aarif",
   publisher: "Mohd Saquib Mohd Aarif",
   alternates: {
-    canonical: baseUrl,
+    canonical: `${baseUrl}/`,
   },
   openGraph: {
     title: defaultTitle,

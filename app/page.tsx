@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Mohd Saquib: Software Engineer in Mumbai. Specializing in high-performance web systems, Core Web Vitals, Technical SEO, AEO, and GEO architecture.",
   alternates: {
-    canonical: "https://saquib-portfolio-dev.vercel.app",
+    canonical: "https://saquib-portfolio-dev.vercel.app/",
   },
   openGraph: {
     title: "Mohd Saquib | Software Engineer & Technical SEO",
     description:
       "Software Engineer at Nexcore Alliance LLP (Mumbai). Building scalable web applications, optimizing Core Web Vitals, and implementing Technical SEO, AEO & GEO.",
-    url: "https://saquib-portfolio-dev.vercel.app",
+    url: "https://saquib-portfolio-dev.vercel.app/",
     siteName: "Mohd Saquib Portfolio",
     images: [
       {
