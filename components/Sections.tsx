@@ -9,7 +9,18 @@ import Lab from "./Lab";
 const Scanner = dynamic(() => import("./Scanner"), { ssr: false, loading: () => <div className="aspect-square" /> });
 function R({ children, className = "", d = 0 }: { children: React.ReactNode; className?: string; d?: number }) { const rm = useReducedMotion(); return <motion.div className={className} initial={rm ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: .5, delay: d }}>{children}</motion.div> }
 const Pending = ({ t = "To be added" }: { t?: string }) => <span className="text-ink/55 border-b border-dashed border-ink/30">{t}</span>;
-function Head({ n, t, sub }: { n: string; t: string; sub?: string }) { return <R className="mb-10 md:mb-14 grid md:grid-cols-12 gap-4"><p className="label text-cobalt md:col-span-2">{n}</p><div className="md:col-span-10"><h2 className="font-display text-5xl md:text-7xl leading-[.95]">{t}</h2>{sub && <p className="mt-4 max-w-xl text-ink/70">{sub}</p>}</div></R> }
+function Head({ n, t, sub, as = "h2" }: { n: string; t: string; sub?: string; as?: "h1" | "h2" }) {
+  const Tag = as;
+  return (
+    <R className="mb-10 md:mb-14 grid md:grid-cols-12 gap-4">
+      <p className="label text-cobalt md:col-span-2">{n}</p>
+      <div className="md:col-span-10">
+        <Tag className="font-display text-5xl md:text-7xl leading-[.95]">{t}</Tag>
+        {sub && <p className="mt-4 max-w-xl text-ink/70">{sub}</p>}
+      </div>
+    </R>
+  );
+}
 const links = [["About", "/aboutus"], ["Work", "/projects"], ["Testing Lab", "/testing-lab"], ["Journey", "/skills"], ["FAQ", "/#faq"], ["Contact", "/contactus"]];
 export function Nav() {
   const [o, setO] = useState(false); return <header className="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-ink/20"><nav aria-label="Primary" className="mx-auto max-w-7xl px-5 h-16 flex items-center justify-between">
@@ -69,31 +80,133 @@ export function Hero() {
     </R>
   </section>;
 }
-export function About() {
-  return <section id="about" className="bg-sage/40 border-y border-ink/20"><div className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="01 — About" t="Engineering for speed, scale & discoverability." />
-    <div className="grid md:grid-cols-[4fr_6fr] gap-14 items-center">
-      <figure className="max-w-[380px] justify-self-center m-0"><div className="relative border border-ink bg-peach aspect-[4/5] shadow-[14px_14px_0_#1F3FD6] transition hover:-translate-x-1 hover:-translate-y-1"><img src="/saquib.jpg" width={520} height={650} alt="Portrait of Mohd Saquib Mohd Aarif in a dark suit, arms crossed" className="h-full w-full object-cover" /><span className="absolute left-3 bottom-3 label bg-paper border border-ink px-2 py-1 normal-case">expect(performance).toBeGreaterThan(99)</span></div><figcaption className="label mt-7 text-ink/60">Mohd Saquib · TY BSc IT · Software Engineer</figcaption></figure>
-      <R className="space-y-5 text-lg text-ink/85 leading-relaxed">
-        <p>Building modern web software is only half the mission—making it load in milliseconds and rank across search and AI answer engines is where engineering truly excels.</p>
-        <p>While completing my TY BSc IT degree in Mumbai, I engineer live software at Nexcore Alliance LLP. Across production web platforms, I architect scalable web architectures, optimize sub-second Core Web Vitals (LCP, INP, CLS), and implement advanced Technical SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AIO.</p>
-        <p>My development philosophy centers on measurable impact: <em>a website that users can't find or that loads slowly is wasted engineering</em>. I structure clean semantic data graphs (JSON-LD, microdata, llms.txt) so modern search engines and LLM agents (ChatGPT, Perplexity, Claude, Gemini) can cite and index applications flawlessly.</p>
-        <p>From modern TypeScript and Next.js full-stack development to granular network profiling and edge performance optimizations, I build fast, discoverable, and resilient digital systems for real-world traffic.</p>
-      </R>
-    </div></div></section>;
+export function About({ isPage = false }: { isPage?: boolean }) {
+  return (
+    <section id="about" className="bg-sage/40 border-y border-ink/20">
+      <div className="mx-auto max-w-7xl px-5 py-20 md:py-28">
+        <Head
+          n="01 — About"
+          t="Engineering for speed, scale & discoverability."
+          as={isPage ? "h1" : "h2"}
+        />
+        <div className="grid md:grid-cols-[4fr_6fr] gap-14 items-center">
+          <figure className="max-w-[380px] justify-self-center m-0">
+            <div className="relative border border-ink bg-peach aspect-[4/5] shadow-[14px_14px_0_#1F3FD6] transition hover:-translate-x-1 hover:-translate-y-1">
+              <img
+                src="/saquib.jpg"
+                width={520}
+                height={650}
+                alt="Portrait of Mohd Saquib Mohd Aarif in a dark suit"
+                title="Mohd Saquib Mohd Aarif - Software Engineer & Technical SEO Specialist"
+                className="h-full w-full object-cover"
+              />
+              <span className="absolute left-3 bottom-3 label bg-paper border border-ink px-2 py-1 normal-case">
+                expect(performance).toBeGreaterThan(99)
+              </span>
+            </div>
+            <figcaption className="label mt-7 text-ink/60">Mohd Saquib · TY BSc IT · Software Engineer</figcaption>
+          </figure>
+          <R className="space-y-5 text-lg text-ink/85 leading-relaxed">
+            <p>
+              I build web applications that load fast, work smoothly, and rank at the top of search results.
+            </p>
+            <p>
+              Currently, I work as a Software Engineer at Nexcore Alliance LLP in Mumbai while finishing my BSc in Information Technology. I build production web apps using modern TypeScript and Next.js. My daily focus is keeping Core Web Vitals green, optimizing API responses, and eliminating code bloat.
+            </p>
+            <p>
+              Search engines and AI answer engines need clean structure to understand web content. I implement structured data schemas (JSON-LD), semantic markup, and manifests so search bots and AI tools like ChatGPT and Perplexity can easily index and cite our platforms.
+            </p>
+            <p>
+              Good engineering delivers real speed and high visibility. I combine clean full-stack coding with proven SEO and web performance strategies to help live digital products grow.
+            </p>
+          </R>
+        </div>
+      </div>
+    </section>
+  );
 }
-export function Work() {
-  return <section id="work" className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="02 — Selected work" t="Case studies & applications." sub="Details are added only when verified. Anything missing is marked, not invented." />
-    {projects.map(p => <R key={p.id}><article className="grid md:grid-cols-12 gap-6 border-t border-ink py-10">
-      <div className="md:col-span-1 font-display text-5xl text-cobalt">{p.id}</div>
-      <div className="md:col-span-5"><span className="label bg-peach px-2 py-1">{p.status}</span><h3 className="font-display text-4xl md:text-5xl mt-4 leading-none">{p.name}</h3><p className="label mt-3 text-ink/60">{p.kind}</p><p className="mt-4 text-ink/80">{p.context}</p></div>
-      <dl className="md:col-span-6 grid sm:grid-cols-2 gap-x-6 gap-y-5 text-sm">
-        <div><dt className="label text-ink/60">My role</dt><dd className="mt-1">{p.role ?? <Pending />}</dd></div>
-        <div><dt className="label text-ink/60">Stack</dt><dd className="mt-1">{p.stack?.join(" · ") ?? <Pending />}</dd></div>
-        <div className="sm:col-span-2"><dt className="label text-ink/60">Test scenarios / implementation</dt><dd className="mt-1">{p.tested ? p.tested.join("; ") : <Pending />}</dd></div>
-        <div><dt className="label text-ink/60">Repository</dt><dd className="mt-1">{p.repo ? <a className="text-cobalt underline" href={p.repo}>View on GitHub</a> : <Pending t="Link coming soon" />}</dd></div>
-        <div><dt className="label text-ink/60">Live demo</dt><dd className="mt-1">{p.live ? <a className="text-cobalt underline" href={p.live}>Open demo</a> : <Pending t="Link coming soon" />}</dd></div></dl></article></R>)}</section>
+
+export function Work({ isPage = false }: { isPage?: boolean }) {
+  return (
+    <section id="work" className="mx-auto max-w-7xl px-5 py-20 md:py-28">
+      <Head
+        n="02 — Selected work"
+        t="Case studies & applications."
+        as={isPage ? "h1" : "h2"}
+        sub="Details are added only when verified. Anything missing is marked, not invented."
+      />
+      {projects.map((p) => (
+        <R key={p.id}>
+          <article className="grid md:grid-cols-12 gap-6 border-t border-ink py-10">
+            <div className="md:col-span-1 font-display text-5xl text-cobalt">{p.id}</div>
+            <div className="md:col-span-5">
+              <span className="label bg-peach px-2 py-1">{p.status}</span>
+              <h3 className="font-display text-4xl md:text-5xl mt-4 leading-none">{p.name}</h3>
+              <p className="label mt-3 text-ink/60">{p.kind}</p>
+              <p className="mt-4 text-ink/80">{p.context}</p>
+            </div>
+            <dl className="md:col-span-6 grid sm:grid-cols-2 gap-x-6 gap-y-5 text-sm">
+              <div>
+                <dt className="label text-ink/60">My role</dt>
+                <dd className="mt-1">{p.role ?? <Pending />}</dd>
+              </div>
+              <div>
+                <dt className="label text-ink/60">Stack</dt>
+                <dd className="mt-1">{p.stack?.join(" · ") ?? <Pending />}</dd>
+              </div>
+              <div className="sm:col-span-2">
+                <dt className="label text-ink/60">Test scenarios / implementation</dt>
+                <dd className="mt-1">{p.tested ? p.tested.join("; ") : <Pending />}</dd>
+              </div>
+              <div>
+                <dt className="label text-ink/60">Repository</dt>
+                <dd className="mt-1">
+                  {p.repo ? (
+                    <a className="text-cobalt underline" href={p.repo}>
+                      View on GitHub
+                    </a>
+                  ) : (
+                    <Pending t="Link coming soon" />
+                  )}
+                </dd>
+              </div>
+              <div>
+                <dt className="label text-ink/60">Live demo</dt>
+                <dd className="mt-1">
+                  {p.live ? (
+                    <a className="text-cobalt underline" href={p.live}>
+                      Open demo
+                    </a>
+                  ) : (
+                    <Pending t="Link coming soon" />
+                  )}
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </R>
+      ))}
+    </section>
+  );
 }
-export function LabSection() { return <section id="lab" className="bg-peach/40 border-y border-ink/20"><div className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="03 — Diagnostics & Testing Lab" t="Live software diagnostics." sub="An interactive diagnostics explorer: filter by severity, step through reproduction scenarios, and inspect deterministic fixes on live software systems." /><R><Lab /></R></div></section> }
+
+export function LabSection({ isPage = false }: { isPage?: boolean }) {
+  return (
+    <section id="lab" className="bg-peach/40 border-y border-ink/20">
+      <div className="mx-auto max-w-7xl px-5 py-20 md:py-28">
+        <Head
+          n="03 — Diagnostics & Testing Lab"
+          t="Live software diagnostics."
+          as={isPage ? "h1" : "h2"}
+          sub="An interactive diagnostics explorer: filter by severity, step through reproduction scenarios, and inspect deterministic fixes on live software systems."
+        />
+        <R>
+          <Lab />
+        </R>
+      </div>
+    </section>
+  );
+}
 export function Approach() {
   return <section className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="04 — Engineering approach" t="How I engineer, optimize & ship." />
     <ol className="relative border-l border-ink ml-2 md:ml-[16.6%] space-y-8">{steps.map(([t, d], i) => <li key={t}><R><div className="pl-8 relative"><span className="absolute -left-[7px] top-2 h-3 w-3 bg-cobalt" /><span className="label text-cobalt">Step {String(i + 1).padStart(2, "0")}</span><h3 className="font-display text-3xl md:text-4xl">{t}</h3><p className="text-ink/70 max-w-lg">{d}</p></div></R></li>)}</ol></section>
@@ -103,10 +216,37 @@ export function Journey() {
   return <section id="journey" className="mx-auto max-w-7xl px-5 pb-20 md:pb-28"><Head n="05 — Journey" t="From modern web development to AI-driven performance." sub="BSc IT degree and live software engineering in parallel. Technologies I use daily are kept apart from what I'm advancing next." />
     <div className="grid md:grid-cols-3 border border-ink">{cols.map(([t, l, c], i) => <R key={t} d={i * .1} className={`p-6 ${c} ${i ? "md:border-l border-t md:border-t-0 border-ink" : ""}`}><h3 className="font-display text-3xl">{t}</h3><ul className="mt-4 space-y-3">{l.map(x => <li key={x} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 bg-ink shrink-0" />{x}</li>)}</ul></R>)}</div></section>
 }
-export function Skills() {
-  return <section className="mx-auto max-w-7xl px-5 pb-20 md:pb-28"><Head n="06 — Skills" t="Labels, not percentages." />
-    <div className="divide-y divide-ink/20 border-y border-ink">{skills.map(s => <R key={s.g}><div className="grid md:grid-cols-12 gap-3 py-5"><h3 className="label md:col-span-3 pt-1">{s.g}</h3><ul className="md:col-span-9 flex flex-wrap gap-2">{s.items.map(([n, st]) => <li key={n} className={`px-3 py-1.5 border border-ink text-sm ${st === "learning" ? "bg-lav" : "bg-sage/60"}`}>{n}<span className="label ml-2 text-ink/60">{st === "learning" ? "learning" : "in use"}</span></li>)}</ul></div></R>)}</div>
-    <p className="label mt-4 text-ink/60">In use = applied across live production builds and client software. Learning = active advancement.</p></section>
+export function Skills({ isPage = false }: { isPage?: boolean }) {
+  return (
+    <section id="skills" className="mx-auto max-w-7xl px-5 pb-20 md:pb-28">
+      <Head n="06 — Skills" t="Labels, not percentages." as={isPage ? "h1" : "h2"} />
+      <div className="divide-y divide-ink/20 border-y border-ink">
+        {skills.map((s) => (
+          <R key={s.g}>
+            <div className="grid md:grid-cols-12 gap-3 py-5">
+              <h3 className="label md:col-span-3 pt-1">{s.g}</h3>
+              <ul className="md:col-span-9 flex flex-wrap gap-2">
+                {s.items.map(([n, st]) => (
+                  <li
+                    key={n}
+                    className={`px-3 py-1.5 border border-ink text-sm ${
+                      st === "learning" ? "bg-lav" : "bg-sage/60"
+                    }`}
+                  >
+                    {n}
+                    <span className="label ml-2 text-ink/60">{st === "learning" ? "learning" : "in use"}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </R>
+        ))}
+      </div>
+      <p className="label mt-4 text-ink/60">
+        In use = applied across live production builds and client software. Learning = active advancement.
+      </p>
+    </section>
+  );
 }
 
 export function RecruiterFAQ() {
@@ -180,10 +320,61 @@ export function RecruiterFAQ() {
   );
 }
 
-export function Contact() {
-  const L = [["Email", profile.email, `mailto:${profile.email}`], ["LinkedIn", profile.linkedin, profile.linkedin], ["GitHub", profile.github, profile.github]];
-  return <footer id="contact" className="bg-cobalt text-paper"><div className="mx-auto max-w-7xl px-5 py-20 md:py-28"><p className="label opacity-80">08 — Contact</p><h2 className="font-display text-[clamp(3rem,10vw,8rem)] leading-[.9] mt-4">Have an app<br />that needs to <em>scale & rank?</em></h2>
-    <ul className="mt-12 grid sm:grid-cols-3 border border-paper/40">{L.map(([l, v, h], i) => <li key={l} className={i ? "sm:border-l border-t sm:border-t-0 border-paper/40" : ""}>{v ? <a href={h} target={h.startsWith("http") ? "_blank" : undefined} rel={h.startsWith("http") ? "noopener noreferrer" : undefined} className="block p-5 hover:bg-paper hover:text-cobalt transition"><span className="label">{l}</span><span className="flex items-center justify-between mt-2 text-lg break-all">{v.replace(/^https?:\/\//, "").replace(/\/$/, "")}<ArrowUpRight size={18} /></span></a> : <div className="p-5 opacity-80"><span className="label">{l}</span><p className="mt-2">Coming soon</p></div>}</li>)}</ul>
-    <p className="label mt-12 opacity-80">© {new Date().getFullYear()} {profile.name} · Software Engineer | Technical SEO, AEO/GEO & Web Performance in Mumbai</p></div></footer>
+export function Contact({
+  title = "Have an app that needs to scale & rank?",
+  as = "h2",
+  isPage = false,
+}: {
+  title?: React.ReactNode;
+  as?: "h1" | "h2";
+  isPage?: boolean;
+}) {
+  const Tag = isPage ? "h1" : as;
+  const L = [
+    ["Email", profile.email, `mailto:${profile.email}`],
+    ["LinkedIn", profile.linkedin, profile.linkedin],
+    ["GitHub", profile.github, profile.github],
+  ];
+  return (
+    <footer id="contact" className="bg-cobalt text-paper">
+      <div className="mx-auto max-w-7xl px-5 py-20 md:py-28">
+        <p className="label opacity-80">08 — Contact</p>
+        <Tag className="font-display text-[clamp(3rem,10vw,8rem)] leading-[.9] mt-4">
+          {title}
+        </Tag>
+        <ul className="mt-12 grid sm:grid-cols-3 border border-paper/40">
+          {L.map(([l, v, h], i) => (
+            <li
+              key={l}
+              className={i ? "sm:border-l border-t sm:border-t-0 border-paper/40" : ""}
+            >
+              {v ? (
+                <a
+                  href={h}
+                  target={h.startsWith("http") ? "_blank" : undefined}
+                  rel={h.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="block p-5 hover:bg-paper hover:text-cobalt transition"
+                >
+                  <span className="label">{l}</span>
+                  <span className="flex items-center justify-between mt-2 text-lg break-all">
+                    {v.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                    <ArrowUpRight size={18} />
+                  </span>
+                </a>
+              ) : (
+                <div className="p-5 opacity-80">
+                  <span className="label">{l}</span>
+                  <p className="mt-2">Coming soon</p>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+        <p className="label mt-12 opacity-80">
+          © {new Date().getFullYear()} {profile.name} · Software Engineer | Technical SEO, AEO/GEO & Web Performance in Mumbai
+        </p>
+      </div>
+    </footer>
+  );
 }
 

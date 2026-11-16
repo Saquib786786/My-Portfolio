@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Nav, Hero, About, Work, LabSection, Approach, Journey, Skills, RecruiterFAQ, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Mohd Saquib Mohd Aarif | Software Engineer | Technical SEO, AEO, GEO & Web Performance",
+  title: "Mohd Saquib | Software Engineer & Technical SEO",
   description:
-    "Mohd Saquib: Software Engineer at Nexcore Alliance LLP (Mumbai). Engineering live production applications with sub-second Web Performance, Technical SEO, AEO, GEO & AIO.",
+    "Mohd Saquib: Software Engineer in Mumbai. Specializing in high-performance web systems, Core Web Vitals, Technical SEO, AEO, and GEO architecture.",
   alternates: {
-    canonical: "/",
+    canonical: "https://saquib-portfolio-dev.vercel.app",
   },
   openGraph: {
-    title: "Mohd Saquib Mohd Aarif | Software Engineer | Technical SEO, AEO, GEO & Web Performance",
+    title: "Mohd Saquib | Software Engineer & Technical SEO",
     description:
       "Software Engineer at Nexcore Alliance LLP (Mumbai). Building scalable web applications, optimizing Core Web Vitals, and implementing Technical SEO, AEO & GEO.",
-    url: "/",
+    url: "https://saquib-portfolio-dev.vercel.app",
     siteName: "Mohd Saquib Portfolio",
     images: [
       {
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohd Saquib Mohd Aarif | Software Engineer | Technical SEO, AEO, GEO & Web Performance",
+    title: "Mohd Saquib | Software Engineer & Technical SEO",
     description:
-      "Software Engineer at Nexcore Alliance LLP. Specializing in high-performance web systems, Core Web Vitals, Technical SEO, AEO, and GEO.",
+      "Software Engineer in Mumbai. Specializing in high-performance web systems, Core Web Vitals, Technical SEO, and GEO architecture.",
     images: ["/saquib.jpg"],
   },
 };

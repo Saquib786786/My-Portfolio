@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { Nav, Contact } from "@/components/Sections";
+import { profile } from "@/lib/data";
+import { Mail, Linkedin, Github, MapPin, Clock, Briefcase } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Mohd Saquib | Software Engineer & Performance Specialist in Mumbai",
+  title: "Contact & Collaboration",
   description:
-    "Contact Mohd Saquib Mohd Aarif for Software Engineer, Technical SEO, AEO/GEO, and Web Performance opportunities in Mumbai and Remote.",
+    "Get in touch with Mohd Saquib for software engineering, web performance tuning, and technical SEO opportunities in Mumbai and remote worldwide.",
   alternates: {
-    canonical: "/contactus",
+    canonical: "https://saquib-portfolio-dev.vercel.app/contactus",
   },
   openGraph: {
-    url: "/contactus",
-    title: "Contact Mohd Saquib Mohd Aarif | Software Engineer",
+    url: "https://saquib-portfolio-dev.vercel.app/contactus",
+    title: "Contact & Collaboration | Mohd Saquib",
     description:
       "Get in touch with Mohd Saquib Mohd Aarif for Software Engineering, Web Performance, and Technical SEO opportunities in Mumbai and Remote.",
     siteName: "Mohd Saquib Portfolio",
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Mohd Saquib Mohd Aarif | Software Engineer",
+    title: "Contact & Collaboration | Mohd Saquib",
     description:
       "Get in touch with Mohd Saquib for Software Engineering, Technical SEO, and Web Performance roles in Mumbai and Remote.",
     images: ["/saquib.jpg"],
@@ -38,9 +40,105 @@ export default function ContactUsPage() {
   return (
     <>
       <Nav />
-      <main className="min-h-[70vh]">
-        <Contact />
+      <main className="min-h-screen bg-paper">
+        <section className="mx-auto max-w-7xl px-5 py-16 md:py-24 border-b border-ink/20">
+          <div className="max-w-4xl">
+            <span className="label text-cobalt font-mono uppercase tracking-wider">
+              Available For Roles & Inquiries
+            </span>
+            <h1 className="font-display text-5xl md:text-7xl mt-4 leading-[.95]">
+              Let&apos;s build something <em className="text-cobalt">fast & discoverable.</em>
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-ink/80 leading-relaxed max-w-2xl">
+              I am actively interviewing for Software Engineer, Frontend/Full-Stack, and Technical SEO & Web Performance specialist roles. Whether you have a project to optimize or an open engineering role, feel free to reach out.
+            </p>
+          </div>
+
+          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="border border-ink p-6 bg-lav/30 space-y-3">
+              <span className="label text-cobalt flex items-center gap-2 font-mono">
+                <Briefcase size={16} /> Open To Roles
+              </span>
+              <h2 className="font-display text-2xl">Full-Time & Contract</h2>
+              <p className="text-sm text-ink/80 leading-relaxed">
+                Software Engineer, Full-Stack Developer, Web Performance Specialist, and Technical SEO / AEO Architect.
+              </p>
+            </div>
+
+            <div className="border border-ink p-6 bg-sage/30 space-y-3">
+              <span className="label text-cobalt flex items-center gap-2 font-mono">
+                <MapPin size={16} /> Work Preferences
+              </span>
+              <h2 className="font-display text-2xl">Mumbai & Remote</h2>
+              <p className="text-sm text-ink/80 leading-relaxed">
+                Available for on-site or hybrid setups across Mumbai (Western & Central Lines), and remote teams worldwide.
+              </p>
+            </div>
+
+            <div className="border border-ink p-6 bg-peach/30 space-y-3 sm:col-span-2 lg:col-span-1">
+              <span className="label text-cobalt flex items-center gap-2 font-mono">
+                <Clock size={16} /> Direct Response
+              </span>
+              <h2 className="font-display text-2xl">Quick SLA</h2>
+              <p className="text-sm text-ink/80 leading-relaxed">
+                Messages via email or LinkedIn are typically answered within 24 business hours.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-5 py-16">
+          <h2 className="font-display text-3xl md:text-4xl mb-8">Direct Communication Channels</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a
+              href={`mailto:${profile.email}`}
+              className="border border-ink p-6 hover:bg-cobalt hover:text-paper transition group"
+            >
+              <div className="flex items-center gap-3">
+                <Mail size={22} className="text-cobalt group-hover:text-paper" />
+                <span className="label text-xs uppercase">Primary Email</span>
+              </div>
+              <p className="font-display text-xl mt-3 break-all">{profile.email}</p>
+              <p className="text-xs text-ink/60 group-hover:text-paper/80 mt-2">
+                Click to send email directly
+              </p>
+            </a>
+
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-ink p-6 hover:bg-cobalt hover:text-paper transition group"
+            >
+              <div className="flex items-center gap-3">
+                <Linkedin size={22} className="text-cobalt group-hover:text-paper" />
+                <span className="label text-xs uppercase">LinkedIn Profile</span>
+              </div>
+              <p className="font-display text-xl mt-3">Connect on LinkedIn</p>
+              <p className="text-xs text-ink/60 group-hover:text-paper/80 mt-2">
+                Direct messaging & networking
+              </p>
+            </a>
+
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-ink p-6 hover:bg-cobalt hover:text-paper transition group"
+            >
+              <div className="flex items-center gap-3">
+                <Github size={22} className="text-cobalt group-hover:text-paper" />
+                <span className="label text-xs uppercase">GitHub Repos</span>
+              </div>
+              <p className="font-display text-xl mt-3">@Saquib786786</p>
+              <p className="text-xs text-ink/60 group-hover:text-paper/80 mt-2">
+                Code repositories & labs
+              </p>
+            </a>
+          </div>
+        </section>
       </main>
+      <Contact title="Ready to discuss engineering or hiring?" />
     </>
   );
 }

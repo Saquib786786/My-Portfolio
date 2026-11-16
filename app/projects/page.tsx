@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import { Nav, Work, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Projects & Engineering Builds | Mohd Saquib Mohd Aarif",
+  title: "Projects & Applications",
   description:
-    "Explore software engineering projects, web applications, API optimizations, and technical labs authored by Mohd Saquib Mohd Aarif.",
+    "Discover software engineering projects, web applications, and performance optimizations built for speed and discoverability by Mohd Saquib.",
   alternates: {
-    canonical: "/projects",
+    canonical: "https://saquib-portfolio-dev.vercel.app/projects",
   },
   openGraph: {
-    url: "/projects",
-    title: "Projects & Engineering Builds | Mohd Saquib Mohd Aarif",
+    url: "https://saquib-portfolio-dev.vercel.app/projects",
+    title: "Projects & Applications | Mohd Saquib",
     description:
       "Real-world application architectures, web performance optimizations, and technical engineering projects.",
     siteName: "Mohd Saquib Portfolio",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projects & Engineering Builds | Mohd Saquib Mohd Aarif",
+    title: "Projects & Applications | Mohd Saquib",
     description:
       "Real-world application architectures, web performance optimizations, and technical engineering projects.",
     images: ["/saquib.jpg"],
@@ -39,9 +39,19 @@ export default function ProjectsPage() {
     <>
       <Nav />
       <main className="min-h-screen">
-        <Work />
+        <section className="mx-auto max-w-7xl px-5 pt-12 pb-6">
+          <div className="border border-ink bg-paper p-8">
+            <h2 className="font-display text-2xl md:text-3xl text-cobalt mb-3">
+              Application Development & Technical Architecture
+            </h2>
+            <p className="text-base text-ink/80 max-w-3xl leading-relaxed">
+              Below are verified software builds, tools, and technical labs. Each application is developed with a strict focus on mobile responsiveness, accessible semantic markup, fast load times, and clean API integration. Missing features or in-progress repositories are transparently marked.
+            </p>
+          </div>
+        </section>
+        <Work isPage={true} />
       </main>
-      <Contact />
+      <Contact title="Have an application that needs speed & scale?" />
     </>
   );
 }

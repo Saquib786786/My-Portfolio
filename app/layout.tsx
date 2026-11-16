@@ -9,22 +9,22 @@ const s = Hanken_Grotesk({ subsets: ["latin"], variable: "--f-sans" });
 const m = JetBrains_Mono({ subsets: ["latin"], variable: "--f-mono" });
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://saquib-portfolio-dev.vercel.app";
-const defaultTitle = "Mohd Saquib Mohd Aarif | Software Engineer | Technical SEO, AEO, GEO & Web Performance";
+const defaultTitle = "Mohd Saquib | Software Engineer & Technical SEO";
 const defaultDesc =
-  "Mohd Saquib: Software Engineer at Nexcore Alliance LLP (Mumbai). Engineering live production applications with sub-second Web Performance, Technical SEO, AEO, GEO & AIO.";
+  "Mohd Saquib: Software Engineer in Mumbai. Specializing in high-performance web systems, Core Web Vitals, Technical SEO, AEO, and GEO architecture.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: defaultTitle,
-    template: "%s | Mohd Saquib Mohd Aarif",
+    template: "%s | Mohd Saquib",
   },
   description: defaultDesc,
   authors: [{ name: "Mohd Saquib Mohd Aarif", url: baseUrl }],
   creator: "Mohd Saquib Mohd Aarif",
   publisher: "Mohd Saquib Mohd Aarif",
   alternates: {
-    canonical: "/",
+    canonical: baseUrl,
   },
   openGraph: {
     title: defaultTitle,
