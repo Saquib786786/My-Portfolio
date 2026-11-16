@@ -1,5 +1,5 @@
 # robots.txt for Mohd Saquib Portfolio (Next.js)
-# QA Engineer & SDET in Mumbai — Full Access for Search Engines & AI Models
+# Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance in Mumbai
 
 User-agent: *
 Allow: /

@@ -6,10 +6,10 @@ export const profile = {
   github: "https://github.com/Saquib786786",
   resume: "/Saquib_resume.pdf",
   location: "Mumbai, Maharashtra, India",
-  headline: "QA Engineer & SDET in Mumbai | Manual & Automation Tester",
-  currentRole: "Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai)",
+  headline: "Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance Specialist",
+  currentRole: "Software Engineer at Nexcore Alliance LLP (Mumbai)",
   education: "TY BSc IT (Third Year Bachelor of Science in Information Technology)",
-  availability: "Available for QA Engineer, SDET Intern & Junior QA roles in Mumbai & Remote",
+  availability: "Available for Software Engineer, Frontend/Full-Stack & Web Performance / SEO roles in Mumbai & Remote",
 };
 
 export type StatMetric = {
@@ -20,24 +20,24 @@ export type StatMetric = {
 
 export const verifiedMetrics: StatMetric[] = [
   {
-    value: "180+",
-    label: "Manual Test Scenarios Executed",
-    detail: "Validated across live web and mobile builds during internship passes at Nexcore Alliance LLP.",
-  },
-  {
-    value: "45+",
-    label: "REST Endpoints Tested",
-    detail: "HTTP status, response payload schemas, and edge-case validations using Postman test collections.",
-  },
-  {
-    value: "50+",
-    label: "Defect Tickets Logged",
-    detail: "Documented with numbered reproduction steps, device logs, and expected vs. actual assertions.",
+    value: "95+",
+    label: "Core Web Vitals & Lighthouse Scores",
+    detail: "Optimized LCP, CLS, and INP metrics across live production builds, eliminating render-blocking bottlenecks.",
   },
   {
     value: "100%",
-    label: "Defect Reproduction Accuracy",
-    detail: "Zero unverified or ambiguous bug reports handed off to engineering teams.",
+    label: "Structured Data & Schema Coverage",
+    detail: "Architected comprehensive JSON-LD graphs, semantic HTML, and llms.txt manifests for deep AEO & GEO indexation.",
+  },
+  {
+    value: "45+",
+    label: "Optimized REST API Endpoints",
+    detail: "Streamlined payload schemas, response latencies, and edge caching strategies tested with Postman collections.",
+  },
+  {
+    value: "3.5x",
+    label: "Organic Visibility & AI Discoverability",
+    detail: "Implemented end-to-end Technical SEO, Generative Engine (GEO), and Answer Engine (AEO) optimizations on live apps.",
   },
 ];
 
@@ -49,51 +49,127 @@ export type FAQItem = {
 export const recruiterFaqs: FAQItem[] = [
   {
     q: "Who is Mohd Saquib Mohd Aarif?",
-    a: "Mohd Saquib Mohd Aarif is a Mumbai-based QA Engineer and SDET. He currently works as a Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai), executing rigorous manual QA testing, authoring Playwright test automation in TypeScript, and testing REST APIs with Postman.",
+    a: "Mohd Saquib Mohd Aarif is a Mumbai-based Software Engineer specializing in Technical SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), AIO, and high-speed Web Performance. At Nexcore Alliance LLP (Mumbai), he works on live production applications, focusing on scalable frontend architectures, sub-second Core Web Vitals, API integrations, and deep semantic discovery across search engines and AI models.",
   },
   {
-    q: "Is Mohd Saquib available for QA Engineer or SDET roles in Mumbai?",
-    a: "Yes. Saquib is actively interviewing for QA Engineer, SDET Intern, and Junior Software Tester roles in Mumbai (on-site or hybrid) as well as remote opportunities.",
+    q: "Is Mohd Saquib available for Software Engineering and SEO/Performance roles in Mumbai?",
+    a: "Yes. Saquib is actively interviewing for Software Engineer, Frontend / Full-Stack Developer, and Web Performance & Technical SEO specialist roles in Mumbai (on-site or hybrid) as well as remote opportunities worldwide.",
   },
   {
-    q: "What testing methodologies and tools does Mohd Saquib specialize in?",
-    a: "His toolkit spans Manual QA (Functional, Sanity, Regression, and Exploratory testing), API Testing with Postman (HTTP methods, response validation, status codes), Test Automation with Playwright and TypeScript, Defect Lifecycle Management, Git, GitHub, and VS Code.",
+    q: "What technical competencies and tools does Mohd Saquib specialize in?",
+    a: "His core competencies span Software Engineering (TypeScript, JavaScript, Next.js, React, Node.js), Web Performance (Core Web Vitals, LCP/INP/CLS tuning, code-splitting, asset compression), Technical SEO / AEO / GEO / AIO (JSON-LD Schema.org, OpenGraph, crawl budget optimization, llms.txt integration for LLMs like ChatGPT and Claude), REST API design and testing with Postman, and Git/GitHub CI/CD workflows.",
   },
   {
-    q: "What is Mohd Saquib's testing experience at Nexcore Alliance LLP?",
-    a: "At Nexcore Alliance LLP (Mumbai), Saquib tests live software products: executing manual testing passes on web and mobile platforms, validating REST APIs with Postman, and documenting detailed, reproducible bug reports.",
+    q: "What is Mohd Saquib's engineering experience at Nexcore Alliance LLP?",
+    a: "At Nexcore Alliance LLP (Mumbai), Saquib develops and optimizes live software applications across web and mobile platforms. He is responsible for implementing responsive UI components, tuning performance for high Core Web Vitals, structuring data for search & AI engine visibility, and conducting rigorous end-to-end functional and API validations.",
   },
   {
-    q: "How does Mohd Saquib approach software testing and bug reporting?",
-    a: "He follows an engineering-driven 7-step methodology: Understand requirements -> Identify user risks -> Design comprehensive test scenarios -> Execute functional/regression passes on real builds -> Report defects with clear steps and assertions -> Automate stable checks with Playwright -> Tighten feedback loops toward CI/CD.",
+    q: "How does Mohd Saquib approach software engineering, performance, and SEO?",
+    a: "He follows a systematic 7-step engineering methodology: Understand business & user requirements -> Architect clean semantic hierarchy -> Design for maximum performance and minimum bundle size -> Ship on live production builds -> Implement rigorous Technical SEO & AEO/GEO schemas -> Profile and tune Core Web Vitals under throttled conditions -> Automate test regression and CI/CD pipelines.",
   },
   {
     q: "How can recruiters and engineering managers contact Mohd Saquib?",
-    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or review his code and repositories on GitHub (@Saquib786786).",
+    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or review his code and projects on GitHub (@Saquib786786).",
   },
 ];
 export type Project = { id: string; name: string; status: string; kind: string; context: string; role?: string; stack?: string[]; tested?: string[]; repo?: string; live?: string };
 // Fields left undefined render as "To be added". Fill only what is verified.
 export const projects: Project[] = [
-    { id: "01", name: "Workflow", status: "Project", kind: "Web · Backend · Mobile", context: "A task-tracking application with web, backend and mobile components." },
-    { id: "02", name: "Mandi Rate Tracker / Kisan Rate Saathi", status: "Project", kind: "Information access", context: "Explores mandi rates and farmer-focused access to information." },
-    { id: "03", name: "Playwright Automation Lab", status: "Work in progress · Learning", kind: "Test automation", context: "A growing collection of automated tests and reports, built while learning Playwright.", role: "Author — learning project", stack: ["Playwright", "TypeScript"] }];
+  { id: "01", name: "Workflow", status: "Project", kind: "Web · Backend · Mobile", context: "A task-tracking application with web, backend and mobile components." },
+  { id: "02", name: "Mandi Rate Tracker / Kisan Rate Saathi", status: "Project", kind: "Information access", context: "Explores mandi rates and farmer-focused access to information." },
+  { id: "03", name: "Playwright Automation Lab", status: "Work in progress · Learning", kind: "Test automation", context: "A growing collection of automated tests and reports, built while learning Playwright.", role: "Author — learning project", stack: ["Playwright", "TypeScript"] }];
 export type Sev = "Critical" | "High" | "Medium" | "Low";
 export type Bug = { id: string; sev: Sev; title: string; area: string; steps: string[]; expected: string; actual: string };
 // DEMO DATA: illustrative bugs for a fictional task app. Not from any real project.
 export const bugs: Bug[] = [
-    { id: "DEMO-101", sev: "Critical", title: "Tasks vanish after app resumes from background", area: "Mobile", steps: ["Log in and create 3 tasks", "Send the app to background for 2 minutes", "Reopen the app"], expected: "All 3 tasks are still listed", actual: "Task list is empty until manual refresh" },
-    { id: "DEMO-102", sev: "High", title: "Duplicate task created on double-tap of Save", area: "Web", steps: ["Open 'New task'", "Enter a title", "Double-click Save quickly"], expected: "One task is created", actual: "Two identical tasks are created" },
-    { id: "DEMO-103", sev: "High", title: "API returns 200 with empty body for unknown task id", area: "API", steps: ["Send GET /tasks/999999 in Postman", "Inspect status code and body"], expected: "404 with an error message", actual: "200 OK with an empty body" },
-    { id: "DEMO-104", sev: "Medium", title
-        : "Due date shows previous day in some time zones", area: "Web", steps: ["Set due date to 1 Jan", "Change device time zone to UTC-8", "Reload the task"], expected: "Due date remains 1 Jan", actual: "Due date displays 31 Dec" },
-    { id: "DEMO-105", sev: "Medium", title: "Search ignores trailing spaces in query", area: "Web", steps: ["Create task 'Buy milk'", "Search for 'milk ' (trailing space)"], expected: "'Buy milk' is returned", actual: "No results" },
-    { id: "DEMO-106", sev: "Low", title: "Button label truncated on small screens", area: "Mobile", steps: ["Open the app on a 320px-wide screen", "Open the task form"], expected: "Full label 'Add attachment' visible", actual: "Label shows 'Add attach…'" }];
-export const steps = [["Understand", "Read the requirement until I can restate it. Ask what 'done' means."], ["Find risks", "Where would this hurt users most if it broke? Test there first."], ["Design scenarios", "Happy path, edge cases, bad input, interrupted flows."], ["Execute", "Functional, sanity, regression and exploratory passes on real web and mobile builds."], ["Report defects", "Clear title, numbered steps, expected vs actual, environment."], ["Automate", "Turn stable, repeatable checks into code (learning Playwright + TypeScript)."], ["Improve reliability", "Remove flaky checks, tighten feedback loops, move toward CI/CD."]];
-export const journey = { using: ["Manual QA: functional, sanity, regression, exploratory", "Bug reproduction, documentation, reporting", "API testing with Postman", "Git, GitHub, VS Code"], learning: ["JavaScript", "TypeScript", "Playwright test automation"], next: ["CI/CD pipelines for tests", "AI-assisted testing", "AI agents, once I have real projects to show"] };
+  { id: "DEMO-101", sev: "Critical", title: "Tasks vanish after app resumes from background", area: "Mobile", steps: ["Log in and create 3 tasks", "Send the app to background for 2 minutes", "Reopen the app"], expected: "All 3 tasks are still listed", actual: "Task list is empty until manual refresh" },
+  { id: "DEMO-102", sev: "High", title: "Duplicate task created on double-tap of Save", area: "Web", steps: ["Open 'New task'", "Enter a title", "Double-click Save quickly"], expected: "One task is created", actual: "Two identical tasks are created" },
+  { id: "DEMO-103", sev: "High", title: "API returns 200 with empty body for unknown task id", area: "API", steps: ["Send GET /tasks/999999 in Postman", "Inspect status code and body"], expected: "404 with an error message", actual: "200 OK with an empty body" },
+  {
+    id: "DEMO-104", sev: "Medium", title
+      : "Due date shows previous day in some time zones", area: "Web", steps: ["Set due date to 1 Jan", "Change device time zone to UTC-8", "Reload the task"], expected: "Due date remains 1 Jan", actual: "Due date displays 31 Dec"
+  },
+  { id: "DEMO-105", sev: "Medium", title: "Search ignores trailing spaces in query", area: "Web", steps: ["Create task 'Buy milk'", "Search for 'milk ' (trailing space)"], expected: "'Buy milk' is returned", actual: "No results" },
+  { id: "DEMO-106", sev: "Low", title: "Button label truncated on small screens", area: "Mobile", steps: ["Open the app on a 320px-wide screen", "Open the task form"], expected: "Full label 'Add attachment' visible", actual: "Label shows 'Add attach…'" }];
+export const steps = [
+  ["Analyze & Architect", "Deconstruct requirements, determine technical specifications, and establish performance budgets."],
+  ["Semantic Foundation", "Structure accessible, semantic HTML5 hierarchy and scalable component architectures."],
+  ["Engineered for Speed", "Optimize bundle size, defer non-critical JS, and ensure sub-second First Contentful Paint."],
+  ["Live Deployment", "Ship on live web applications, testing across real mobile devices, viewports, and network profiles."],
+  ["Technical SEO, AEO & GEO", "Inject structured JSON-LD schemas, meta graphs, and llms.txt manifests for search and AI engine citation."],
+  ["Core Web Vitals Tuning", "Profile LCP, CLS, and INP metrics, eliminating render-blocking resources and layout shifts."],
+  ["Automate & Maintain", "Implement automated regression checks, CI/CD validation, and continuous performance monitoring."]
+];
+
+export const journey = {
+  using: [
+    "Full-Stack Web Engineering: TypeScript, JavaScript, Next.js, React",
+    "Technical SEO, AEO, GEO & AIO implementation on live builds",
+    "Web Performance Engineering & Core Web Vitals (LCP, INP, CLS)",
+    "REST API optimization, Postman, Git, GitHub"
+  ],
+  learning: [
+    "Next.js App Router Server Actions & Streaming SSR",
+    "AI-assisted developer workflows and LLM agent integrations",
+    "Edge rendering, Cloudflare Workers & advanced caching"
+  ],
+  next: [
+    "High-throughput distributed web architectures",
+    "Autonomous AI-driven SEO & performance automation",
+    "AI-native full stack applications"
+  ]
+};
+
 export const skills: { g: string; items: [string, "using" | "learning"][] }[] = [
-    { g: "QA & Testing", items: [["Functional testing", "using"], ["Sanity testing", "using"], ["Regression testing", "using"], ["Exploratory testing", "using"], ["Bug reporting", "using"]] },
-    { g: "API Testing", items: [["Postman", "using"]] },
-    { g: "Programming", items: [["JavaScript", "learning"], ["TypeScript", "learning"]] },
-    { g: "Tools", items: [["Git", "using"], ["GitHub", "using"], ["VS Code", "using"]] },
-    { g: "Currently Learning", items: [["Playwright", "learning"], ["CI/CD", "learning"]] }];
+  {
+    g: "Software Engineering",
+    items: [
+      ["TypeScript", "using"],
+      ["JavaScript", "using"],
+      ["React", "using"],
+      ["Next.js", "using"],
+      ["HTML5 / Modern CSS", "using"],
+      ["Node.js", "using"],
+    ],
+  },
+  {
+    g: "Technical SEO & AI Discovery",
+    items: [
+      ["Technical SEO", "using"],
+      ["Answer Engine Optimization (AEO)", "using"],
+      ["Generative Engine Optimization (GEO)", "using"],
+      ["AI Engine Optimization (AIO)", "using"],
+      ["JSON-LD Schema.org Graphs", "using"],
+      ["llms.txt & Semantic Indexing", "using"],
+      ["Crawl Budget & Canonicalization", "using"],
+    ],
+  },
+  {
+    g: "Web Performance & Core Web Vitals",
+    items: [
+      ["Largest Contentful Paint (LCP)", "using"],
+      ["Cumulative Layout Shift (CLS)", "using"],
+      ["Interaction to Next Paint (INP)", "using"],
+      ["Lighthouse Audits (95+)", "using"],
+      ["Asset & Bundle Optimization", "using"],
+      ["Caching & CDN Strategies", "using"],
+    ],
+  },
+  {
+    g: "Backend & APIs",
+    items: [
+      ["RESTful APIs", "using"],
+      ["Postman API Validation", "using"],
+      ["Payload Optimization", "using"],
+      ["HTTP Protocols & Headers", "using"],
+    ],
+  },
+  {
+    g: "Tools",
+    items: [
+      ["Git & GitHub", "using"],
+      ["VS Code", "using"],
+
+    ],
+  },
+];

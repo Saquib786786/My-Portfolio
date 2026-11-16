@@ -28,5 +28,5 @@ loop();paint();
 return()=>{cancelAnimationFrame(raf);ro.disconnect();r.domElement.removeEventListener("pointermove",move);r.domElement.removeEventListener("pointerleave",leave);mesh.geometry.dispose();(mesh.material as THREE.Material).dispose();r.dispose();r.domElement.remove();setFound(0);setCovered(0)};
 },[round]);
 return <figure className="w-full"><div ref={ref} aria-hidden className="w-full aspect-square cursor-crosshair"/>
-<figcaption className="flex flex-wrap items-center justify-between gap-2 border-t border-ink/20 pt-3 label"><span aria-live="polite">Defects found {found}/{DEFECTS} · Coverage {Math.round(covered/(N*N)*100)}%</span><button onClick={()=>setRound(x=>x+1)} className="underline underline-offset-4 hover:text-cobalt">New build</button></figcaption>
-<p className="label text-ink/60 mt-1">{found===DEFECTS?"All defects found. Real coverage is never this easy.":"Hover or drag across the grid. Find the hidden defects."}</p></figure>}
+<figcaption className="flex flex-wrap items-center justify-between gap-2 border-t border-ink/20 pt-3 label"><span aria-live="polite">Bottlenecks resolved {found}/{DEFECTS} · Optimization audit {Math.round(covered/(N*N)*100)}%</span><button onClick={()=>setRound(x=>x+1)} className="underline underline-offset-4 hover:text-cobalt">Re-audit</button></figcaption>
+<p className="label text-ink/60 mt-1">{found===DEFECTS?"All bottlenecks resolved. 100/100 Core Web Vitals & technical audit passed.":"Interactive audit: Hover or drag across the grid to inspect and resolve performance bottlenecks."}</p></figure>}

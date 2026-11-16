@@ -9,9 +9,9 @@ const s = Hanken_Grotesk({ subsets: ["latin"], variable: "--f-sans" });
 const m = JetBrains_Mono({ subsets: ["latin"], variable: "--f-mono" });
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://saquib-portfolio-dev.vercel.app";
-const defaultTitle = "Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai";
+const defaultTitle = "Mohd Saquib Mohd Aarif | Software Engineer | Technical SEO, AEO, GEO & Web Performance";
 const defaultDesc =
-  "Mohd Saquib: QA Engineer & SDET in Mumbai. Junior intern at Nexcore Alliance LLP specializing in manual QA, Playwright automation & Postman API testing.";
+  "Mohd Saquib: Software Engineer at Nexcore Alliance LLP (Mumbai). Engineering live production applications with sub-second Web Performance, Technical SEO, AEO, GEO & AIO.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/saquib.jpg",
         width: 1200,
         height: 630,
-        alt: "Mohd Saquib Mohd Aarif - QA Engineer & SDET in Mumbai",
+        alt: "Mohd Saquib Mohd Aarif - Software Engineer in Mumbai",
       },
     ],
   },
@@ -71,7 +71,7 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${baseUrl}/#website`,
       url: baseUrl,
-      name: "Mohd Saquib Mohd Aarif — QA Engineer & SDET Portfolio",
+      name: "Mohd Saquib Mohd Aarif — Software Engineer, Technical SEO & Web Performance",
       description: defaultDesc,
       publisher: {
         "@id": `${baseUrl}/#person`,
@@ -101,7 +101,7 @@ const structuredData = {
       legalName: "Nexcore Alliance LLP",
       url: baseUrl,
       logo: `${baseUrl}/saquib.jpg`,
-      description: "Software development and IT consulting company based in Mumbai, Maharashtra.",
+      description: "Software engineering and digital product development company based in Mumbai, Maharashtra.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Mumbai",
@@ -123,8 +123,8 @@ const structuredData = {
       "@type": "Person",
       "@id": `${baseUrl}/#person`,
       name: "Mohd Saquib Mohd Aarif",
-      alternateName: ["Mohd Saquib", "Saquib Aarif", "Mohd Saquib QA"],
-      jobTitle: "QA Engineer & SDET",
+      alternateName: ["Mohd Saquib", "Saquib Aarif", "Mohd Saquib Software Engineer"],
+      jobTitle: "Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance",
       description: defaultDesc,
       url: baseUrl,
       image: `${baseUrl}/saquib.jpg`,
@@ -141,7 +141,7 @@ const structuredData = {
         legalName: "Nexcore Alliance LLP",
         url: baseUrl,
         logo: `${baseUrl}/saquib.jpg`,
-        description: "Software development and IT consulting company based in Mumbai, Maharashtra.",
+        description: "Software engineering and digital product development company based in Mumbai, Maharashtra.",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Mumbai",
@@ -159,24 +159,24 @@ const structuredData = {
       },
       hasOccupation: {
         "@type": "Occupation",
-        name: "Software Quality Assurance Engineer / SDET",
-        occupationalCategory: "15-1253.00",
-        skills: "Playwright Automation, Postman API Testing, Manual Testing, Functional Testing, Regression Testing, Defect Lifecycle, TypeScript, Bug Reporting",
+        name: "Software Engineer / Web Performance & Technical SEO Specialist",
+        occupationalCategory: "15-1252.00",
+        skills: "Software Engineering, Next.js, React, TypeScript, Technical SEO, AEO, GEO, AIO, Core Web Vitals, Web Performance, Schema.org, REST APIs",
       },
       knowsAbout: [
-        "Software Quality Assurance (QA)",
-        "Software Development Engineer in Test (SDET)",
-        "Manual QA Testing",
-        "Playwright Test Automation",
-        "Postman API Testing",
-        "Regression Testing",
-        "Functional Testing",
-        "Sanity Testing",
-        "Exploratory Testing",
-        "Defect Lifecycle & Bug Reporting",
-        "TypeScript",
-        "JavaScript",
-        "QA Testing in Mumbai",
+        "Software Engineering",
+        "Technical SEO",
+        "Answer Engine Optimization (AEO)",
+        "Generative Engine Optimization (GEO)",
+        "AI Engine Optimization (AIO)",
+        "Web Performance Engineering",
+        "Core Web Vitals (LCP, CLS, INP)",
+        "JSON-LD Schema.org Architecture",
+        "Semantic Web & llms.txt",
+        "Next.js & React",
+        "TypeScript & JavaScript",
+        "REST API Optimization & Postman",
+        "Web Performance in Mumbai",
       ],
     },
     {

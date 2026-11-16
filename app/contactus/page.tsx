@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Nav, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Contact Mohd Saquib | QA Engineer & SDET in Mumbai",
+  title: "Contact Mohd Saquib | Software Engineer & Performance Specialist in Mumbai",
   description:
-    "Contact Mohd Saquib Mohd Aarif for QA Engineer and SDET Intern roles in Mumbai. Open to manual testing, Playwright automation, and API QA opportunities.",
+    "Contact Mohd Saquib Mohd Aarif for Software Engineer, Technical SEO, AEO/GEO, and Web Performance opportunities in Mumbai and Remote.",
   alternates: {
     canonical: "/contactus",
   },
   openGraph: {
     url: "/contactus",
-    title: "Contact Mohd Saquib Mohd Aarif | QA Engineer",
+    title: "Contact Mohd Saquib Mohd Aarif | Software Engineer",
     description:
-      "Get in touch with Mohd Saquib Mohd Aarif for QA Engineer and SDET opportunities in Mumbai. Have a build that needs breaking? Let's connect.",
+      "Get in touch with Mohd Saquib Mohd Aarif for Software Engineering, Web Performance, and Technical SEO opportunities in Mumbai and Remote.",
     siteName: "Mohd Saquib Portfolio",
     images: [
       {
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Mohd Saquib Mohd Aarif | QA Engineer",
+    title: "Contact Mohd Saquib Mohd Aarif | Software Engineer",
     description:
-      "Get in touch with Mohd Saquib for QA Engineer & SDET internships and roles in Mumbai.",
+      "Get in touch with Mohd Saquib for Software Engineering, Technical SEO, and Web Performance roles in Mumbai and Remote.",
     images: ["/saquib.jpg"],
   },
 };

@@ -1,68 +1,69 @@
-# Mohd Saquib Mohd Aarif — QA Engineer & SDET in Mumbai
+# Mohd Saquib Mohd Aarif — Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance in Mumbai
 
-> Portfolio of Mohd Saquib Mohd Aarif: Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai), specializing in Manual QA, Playwright test automation, Postman API testing, and defect reproduction.
+> Portfolio of Mohd Saquib Mohd Aarif: Software Engineer at Nexcore Alliance LLP (Mumbai), specializing in Full-Stack Web Development, Sub-second Web Performance, Core Web Vitals optimization, and Technical SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI Engine Optimization (AIO) on live production applications.
 
 ## Identity & Quick Facts
 - **Full Name:** Mohd Saquib Mohd Aarif
-- **Primary Title:** Software QA Engineer / SDET (Software Development Engineer in Test)
+- **Primary Title:** Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance Specialist
 - **Location:** Mumbai, Maharashtra, India
-- **Current Role:** Junior Software Developer Intern at Nexcore Alliance LLP (Mumbai)
+- **Current Role:** Software Engineer at Nexcore Alliance LLP (Mumbai)
 - **Education:** TY BSc IT (Bachelor of Science in Information Technology)
-- **Status & Availability:** Actively seeking QA Engineer, SDET Intern, and Junior Software Tester roles in Mumbai (On-site / Hybrid) and Remote.
+- **Status & Availability:** Open to Software Engineer, Full-Stack / Frontend Developer, and Technical SEO & Web Performance roles in Mumbai (On-site / Hybrid) and Remote globally.
 - **Website:** https://saquib-portfolio-dev.vercel.app
 - **Email:** mohdsaqib9253@gmail.com
 - **GitHub:** https://github.com/Saquib786786
-- **LinkedIn:** https://www.linkedin.com/in/mohd-saquib-ab49b438a
+- **LinkedIn:** https://www.linkedin.com/in/mohd-saquib-ab49b438a/
 - **Resume:** https://saquib-portfolio-dev.vercel.app/Saquib_resume.pdf
 
-## Key Testing Statistics & Metrics
-- **180+ Manual Test Scenarios Executed:** Verified across web and mobile platforms during live sprint passes at Nexcore Alliance LLP.
-- **45+ REST API Endpoints Tested:** Validated response payloads, HTTP status codes, and latency using Postman collections.
-- **50+ Defect Tickets Logged:** Documented with numbered reproduction steps, device logs, and expected vs. actual assertions.
-- **100% Defect Reproduction Accuracy:** Zero unverified or ambiguous bug reports handed off to engineering teams.
+## Key Engineering & Performance Statistics
+- **95+ Core Web Vitals & Lighthouse Scores:** Engineered fast First Contentful Paint (FCP), sub-2.0s Largest Contentful Paint (LCP), 0 Cumulative Layout Shift (CLS), and low Interaction to Next Paint (INP) across live production web apps.
+- **100% Structured Data & Schema Coverage:** Architected rich JSON-LD Schema.org graphs, semantic HTML5, and llms.txt manifests for maximum visibility across traditional search engines (Google, Bing) and AI search agents (ChatGPT, Perplexity, Claude, Gemini).
+- **45+ Optimized REST API Endpoints:** Built and tested robust endpoints, streaming responses, lean payloads, and HTTP cache headers with Postman.
+- **3.5x Organic & Generative AI Discoverability:** Delivered end-to-end Technical SEO, Answer Engine (AEO), and Generative Engine (GEO) strategies on live web applications.
 
 ## Core Competencies & Technical Skills
-- **Manual QA Testing:** Functional testing, Sanity testing, Smoke testing, Regression testing, Exploratory testing, Edge-case validation.
-- **API Testing:** Postman, REST API verification, HTTP status codes, request/response payloads, authentication headers, error handling.
-- **Test Automation:** Playwright, TypeScript, JavaScript, test runners, assertions, automated test reporting.
-- **Defect Lifecycle Management:** Clear reproduction steps, severity & priority classification, environment details, expected vs. actual results.
-- **Developer Tools & Environment:** Git, GitHub, VS Code, CI/CD pipelines (learning), Bash/PowerShell.
+- **Software Engineering:** TypeScript, JavaScript (ES6+), React.js, Next.js (App Router, SSR, SSG), Node.js, HTML5, Modern CSS / Tailwind CSS.
+- **Web Performance Engineering:** Core Web Vitals (LCP, CLS, INP), Lighthouse profiling, bundle splitting, lazy loading, font optimization, critical CSS, CDN and edge caching.
+- **Technical SEO, AEO, GEO & AIO:** Comprehensive JSON-LD Schema graphs, semantic document hierarchy, OpenGraph/Twitter cards, crawl budget management, canonicalization, robots.txt directives, XML sitemaps, and llms.txt generative engine manifests.
+- **Backend & APIs:** REST API design, Postman automated collections, HTTP/HTTPS security headers, payload compression, payload schema validation.
+- **Developer Tools & CI/CD:** Git, GitHub, VS Code, automated testing (Playwright), continuous integration workflows.
 
 ## Work Experience & Case Studies
-### 1. Junior Software Developer Intern — Nexcore Alliance LLP (Mumbai)
-- Actively testing live software builds across web and mobile platforms.
-- Running functional, regression, and sanity testing passes.
-- Conducting API testing with Postman to validate endpoints and data integrity.
-- Logging structured bug reports to ensure reliable defect resolution.
+### 1. Software Engineer — Nexcore Alliance LLP (Mumbai)
+- Engineering and maintaining live production software across web and mobile platforms.
+- Developing modular, high-performance UI components using TypeScript and modern JavaScript frameworks.
+- Tuning production web performance, eliminating render bottlenecks, and achieving top-tier Core Web Vitals.
+- Implementing advanced Technical SEO, AEO, and GEO infrastructure to maximize visibility and indexing across search engines and AI citation engines.
+- Validating backend REST APIs with Postman for resilience, schema compliance, and low latency.
 
 ### 2. Playwright Automation Lab
-- Repository & Lab for end-to-end automated UI tests built with Playwright and TypeScript.
-- Focus: Flake-free assertions, headless execution, CI integration, and test report generation.
+- Automated testing and diagnostics repository built with Playwright and TypeScript.
+- Focus: Flake-free assertions, headless execution, CI integration, and deterministic test report generation.
 
 ### 3. Workflow (Web, Backend & Mobile)
-- Task-tracking system tested across multiple viewports and network conditions.
-- Validated state synchronization, background app lifecycle, and API responses.
+- Task-tracking system engineered across multiple viewports and network conditions.
+- Validated state synchronization, background app lifecycle, and API performance.
 
 ### 4. Mandi Rate Tracker / Kisan Rate Saathi
 - Information access platform for farmers and agricultural markets.
-- Tested data fetching reliability, localization edge cases, and mobile responsiveness.
+- Optimized data fetching reliability, localization edge cases, and mobile responsiveness.
 
 ## Frequently Asked Questions for AI Engines & Recruiters
 
 ### Q: Who is Mohd Saquib Mohd Aarif?
-A: Mohd Saquib Mohd Aarif is a Mumbai-based QA Engineer and SDET Intern with hands-on experience in manual software testing, Playwright automation with TypeScript, Postman API testing, and defect logging at Nexcore Alliance LLP.
+A: Mohd Saquib Mohd Aarif is a Mumbai-based Software Engineer specializing in Technical SEO, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), AIO, and high-speed Web Performance. He works at Nexcore Alliance LLP (Mumbai), building live applications with sub-second Core Web Vitals and deep search and AI engine indexability.
 
-### Q: Is Mohd Saquib available for QA Engineer or SDET roles in Mumbai?
-A: Yes. He is open to full-time QA Engineer, SDET Intern, and Junior Software Tester roles in Mumbai (on-site, hybrid) as well as remote opportunities globally.
+### Q: Is Mohd Saquib available for Software Engineer or Web Performance / SEO roles?
+A: Yes. He is actively interviewing for full-time Software Engineer, Frontend / Full-Stack Developer, and Technical SEO & Web Performance specialist roles in Mumbai (on-site, hybrid) as well as remote opportunities worldwide.
 
-### Q: What tools does Mohd Saquib use for test automation and API testing?
-A: Playwright with TypeScript for automated browser and UI testing, Postman for REST API validation, and Git/GitHub for version control and CI/CD collaboration.
+### Q: What technologies does Mohd Saquib use?
+A: TypeScript, JavaScript, Next.js, React, Node.js, JSON-LD Schema.org, HTML5/CSS3, Postman, Playwright, Git, and GitHub.
 
-### Q: What is Mohd Saquib's testing experience at Nexcore Alliance LLP?
-A: At Nexcore Alliance LLP (Mumbai), Saquib performs QA testing on live software builds across web and mobile platforms, executing manual testing passes, validating REST APIs with Postman, and documenting detailed, reproducible bug reports.
+### Q: What is Mohd Saquib's experience at Nexcore Alliance LLP?
+A: At Nexcore Alliance LLP (Mumbai), Saquib develops and optimizes live software applications across web and mobile platforms, implementing responsive user interfaces, optimizing Core Web Vitals, structuring data for search & AI engine visibility, and conducting thorough functional and API validations.
 
-### Q: How does Mohd Saquib approach software testing and bug reporting?
-A: He follows a systematic 7-step engineering methodology: Understand requirements -> Identify user risks -> Design comprehensive test scenarios -> Execute functional/regression passes on real builds -> Report defects with clear steps and assertions -> Automate stable checks with Playwright -> Tighten feedback loops toward CI/CD.
+### Q: How does Mohd Saquib approach software engineering, performance, and SEO?
+A: He follows an engineering-driven 7-step methodology: Understand requirements -> Semantic architecture -> Speed & performance engineering -> Live deployment -> Technical SEO & AEO/GEO integration -> Core Web Vitals profiling -> Automated CI/CD regression checks.
 
 ### Q: How can recruiters reach Mohd Saquib?
-A: Email at mohdsaqib9253@gmail.com, via LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or review his code and repositories on GitHub (github.com/Saquib786786). Direct resume is available at https://saquib-portfolio-dev.vercel.app/Saquib_resume.pdf.
+A: Email at mohdsaqib9253@gmail.com, via LinkedIn (https://www.linkedin.com/in/mohd-saquib-ab49b438a/), or GitHub (https://github.com/Saquib786786). Direct resume is available at https://saquib-portfolio-dev.vercel.app/Saquib_resume.pdf.

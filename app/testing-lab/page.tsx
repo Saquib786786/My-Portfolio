@@ -2,24 +2,24 @@ import type { Metadata } from "next";
 import { Nav, LabSection, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "Interactive Testing Lab & Bug Reproduction | Mohd Saquib",
+  title: "Diagnostics & Testing Lab | Mohd Saquib Mohd Aarif",
   description:
-    "Interactive QA testing lab: filter by severity, step through reproduction steps, and inspect QA assertions by Mohd Saquib Mohd Aarif.",
+    "Interactive software diagnostics and edge-case testing lab demonstrating defect analysis, assertion verification, and deterministic engineering fixes.",
   alternates: {
     canonical: "/testing-lab",
   },
   openGraph: {
     url: "/testing-lab",
-    title: "Interactive Testing Lab | Mohd Saquib Mohd Aarif",
+    title: "Diagnostics & Testing Lab | Mohd Saquib Mohd Aarif",
     description:
-      "Interactive bug report explorer demonstrating rigorous QA defect reproduction methodology.",
+      "Interactive software diagnostics explorer demonstrating systematic edge-case reproduction and root-cause analysis.",
     siteName: "Mohd Saquib Portfolio",
     images: [
       {
         url: "/saquib.jpg",
         width: 1200,
         height: 630,
-        alt: "QA Testing Lab - Mohd Saquib",
+        alt: "Diagnostics Lab - Mohd Saquib",
       },
     ],
     locale: "en_IN",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Interactive Testing Lab | Mohd Saquib",
+    title: "Diagnostics & Testing Lab | Mohd Saquib",
     description:
-      "Interactive bug reproduction explorer demonstrating systematic defect analysis.",
+      "Interactive diagnostics explorer demonstrating systematic edge-case analysis.",
     images: ["/saquib.jpg"],
   },
 };

@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Nav, About, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
-  title: "About Mohd Saquib Mohd Aarif | QA Engineer & SDET in Mumbai",
+  title: "About Mohd Saquib Mohd Aarif | Software Engineer & Technical SEO Specialist in Mumbai",
   description:
-    "Learn about Mohd Saquib Mohd Aarif, TY BSc IT student & QA intern at Nexcore Alliance LLP specializing in manual QA, Playwright & Postman API testing.",
+    "Learn about Mohd Saquib Mohd Aarif, Software Engineer at Nexcore Alliance LLP specializing in Technical SEO, AEO, GEO, AIO, and Web Performance on live web apps.",
   alternates: {
     canonical: "/aboutus",
   },
   openGraph: {
     url: "/aboutus",
-    title: "About Mohd Saquib Mohd Aarif | QA Engineer & SDET",
+    title: "About Mohd Saquib Mohd Aarif | Software Engineer & Technical SEO",
     description:
-      "Junior Software Developer Intern with live QA testing experience on mobile, web, and APIs in Mumbai, India.",
+      "Software Engineer with live experience in scalable web applications, Core Web Vitals, and Technical SEO/AEO/GEO in Mumbai, India.",
     siteName: "Mohd Saquib Portfolio",
     images: [
       {
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Mohd Saquib Mohd Aarif | QA Engineer",
+    title: "About Mohd Saquib Mohd Aarif | Software Engineer",
     description:
-      "Junior Software Developer Intern at Nexcore Alliance LLP focusing on QA, Playwright, and Postman API testing.",
+      "Software Engineer at Nexcore Alliance LLP focusing on Web Performance, Core Web Vitals, Technical SEO, AEO & GEO.",
     images: ["/saquib.jpg"],
   },
 };
