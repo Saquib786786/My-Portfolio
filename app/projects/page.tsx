@@ -50,6 +50,28 @@ export default function ProjectsPage() {
           </div>
         </section>
         <Work isPage={true} />
+        <section className="mx-auto max-w-7xl px-5 py-12 border-t border-ink/20">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="border border-ink p-6 bg-lav/20">
+              <h3 className="font-display text-2xl mb-2">Built for Performance</h3>
+              <p className="text-sm text-ink/80 leading-relaxed">
+                Every project is built to load under two seconds. Assets are compressed, images are modern web formats, and JavaScript is split for quick loading.
+              </p>
+            </div>
+            <div className="border border-ink p-6 bg-sage/20">
+              <h3 className="font-display text-2xl mb-2">Mobile First Design</h3>
+              <p className="text-sm text-ink/80 leading-relaxed">
+                All interfaces work smoothly on phones, tablets, and desktop screens. Touch targets are large and layouts adapt to any screen width.
+              </p>
+            </div>
+            <div className="border border-ink p-6 bg-peach/20">
+              <h3 className="font-display text-2xl mb-2">Search Engine Friendly</h3>
+              <p className="text-sm text-ink/80 leading-relaxed">
+                Pages use semantic HTML tags and meta descriptions. This allows Google and AI crawlers to discover and rank content without friction.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
       <Contact title="Have an application that needs speed & scale?" />
     </>

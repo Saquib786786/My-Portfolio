@@ -49,27 +49,27 @@ export type FAQItem = {
 export const recruiterFaqs: FAQItem[] = [
   {
     q: "Who is Mohd Saquib Mohd Aarif?",
-    a: "Mohd Saquib Mohd Aarif is a Mumbai-based Software Engineer specializing in Technical SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), AIO, and high-speed Web Performance. At Nexcore Alliance LLP (Mumbai), he works on live production applications, focusing on scalable frontend architectures, sub-second Core Web Vitals, API integrations, and deep semantic discovery across search engines and AI models.",
+    a: "Mohd Saquib is a Software Engineer based in Mumbai. He works on live web applications at Nexcore Alliance LLP. His focus is web performance, fast load times, and technical SEO. He builds clean frontend interfaces and helps websites rank on Google and AI search engines.",
   },
   {
     q: "Is Mohd Saquib available for Software Engineering and SEO/Performance roles in Mumbai?",
-    a: "Yes. Saquib is actively interviewing for Software Engineer, Frontend / Full-Stack Developer, and Web Performance & Technical SEO specialist roles in Mumbai (on-site or hybrid) as well as remote opportunities worldwide.",
+    a: "Yes. Saquib is open to full-time roles in Mumbai and remote positions worldwide. He is interviewing for Software Engineer, Frontend Developer, and Web Performance roles.",
   },
   {
     q: "What technical competencies and tools does Mohd Saquib specialize in?",
-    a: "His core competencies span Software Engineering (TypeScript, JavaScript, Next.js, React, Node.js), Web Performance (Core Web Vitals, LCP/INP/CLS tuning, code-splitting, asset compression), Technical SEO / AEO / GEO / AIO (JSON-LD Schema.org, OpenGraph, crawl budget optimization, llms.txt integration for LLMs like ChatGPT and Claude), REST API design and testing with Postman, and Git/GitHub CI/CD workflows.",
+    a: "Saquib builds with TypeScript, JavaScript, React, and Next.js. He speeds up web pages using Core Web Vitals best practices. He also sets up JSON-LD schema, sitemaps, and REST APIs with Postman.",
   },
   {
     q: "What is Mohd Saquib's engineering experience at Nexcore Alliance LLP?",
-    a: "At Nexcore Alliance LLP (Mumbai), Saquib develops and optimizes live software applications across web and mobile platforms. He is responsible for implementing responsive UI components, tuning performance for high Core Web Vitals, structuring data for search & AI engine visibility, and conducting rigorous end-to-end functional and API validations.",
+    a: "At Nexcore Alliance LLP, Saquib builds and tests live web software. He creates responsive layouts, improves page speed, and tests APIs. He also optimizes sites so search engines can find and index them quickly.",
   },
   {
     q: "How does Mohd Saquib approach software engineering, performance, and SEO?",
-    a: "He follows a systematic 7-step engineering methodology: Understand business & user requirements -> Architect clean semantic hierarchy -> Design for maximum performance and minimum bundle size -> Ship on live production builds -> Implement rigorous Technical SEO & AEO/GEO schemas -> Profile and tune Core Web Vitals under throttled conditions -> Automate test regression and CI/CD pipelines.",
+    a: "Saquib follows a simple seven-step plan. First, he reviews requirements. Next, he designs clean code and sets performance budgets. Then, he ships code to live builds, adds structured data, and tunes page speed. Finally, he adds automated checks to prevent regressions.",
   },
   {
     q: "How can recruiters and engineering managers contact Mohd Saquib?",
-    a: "You can reach Mohd Saquib via email at mohdsaqib9253@gmail.com, connect on LinkedIn (linkedin.com/in/mohd-saquib-ab49b438a), or review his code and projects on GitHub (@Saquib786786).",
+    a: "You can email him at mohdsaqib9253@gmail.com. You can also connect on LinkedIn or check his GitHub repositories under @Saquib786786.",
   },
 ];
 export type Project = { id: string; name: string; status: string; kind: string; context: string; role?: string; stack?: string[]; tested?: string[]; repo?: string; live?: string };
