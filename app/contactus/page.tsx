@@ -50,7 +50,7 @@ export default function ContactUsPage() {
               Let&apos;s build something <em className="text-cobalt">fast & discoverable.</em>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-ink/80 leading-relaxed max-w-2xl">
-              I am actively interviewing for Software Engineer, Frontend/Full-Stack, and Technical SEO & Web Performance specialist roles. Whether you have a project to optimize or an open engineering role, feel free to reach out.
+              I am looking for new roles as a Software Engineer and Frontend Developer. I build fast websites and help them rank well on search engines. Feel free to contact me for jobs or project work.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function ContactUsPage() {
               </span>
               <h2 className="font-display text-2xl">Full-Time & Contract</h2>
               <p className="text-sm text-ink/80 leading-relaxed">
-                Software Engineer, Full-Stack Developer, Web Performance Specialist, and Technical SEO / AEO Architect.
+                Full-time jobs and contract work. I build fast web apps and optimize page speed.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export default function ContactUsPage() {
               </span>
               <h2 className="font-display text-2xl">Mumbai & Remote</h2>
               <p className="text-sm text-ink/80 leading-relaxed">
-                Available for on-site or hybrid setups across Mumbai (Western & Central Lines), and remote teams worldwide.
+                I work in Mumbai and can work on-site or hybrid. I also work with remote teams worldwide.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ export default function ContactUsPage() {
               </span>
               <h2 className="font-display text-2xl">Quick SLA</h2>
               <p className="text-sm text-ink/80 leading-relaxed">
-                Messages via email or LinkedIn are typically answered within 24 business hours.
+                I reply to emails and LinkedIn messages within 24 hours.
               </p>
             </div>
           </div>
@@ -135,6 +135,30 @@ export default function ContactUsPage() {
                 Code repositories & labs
               </p>
             </a>
+          </div>
+
+          <div className="mt-12 border border-ink p-8 bg-paper">
+            <h3 className="font-display text-2xl text-cobalt mb-3">Hiring & Next Steps</h3>
+            <p className="text-sm text-ink/80 leading-relaxed mb-4">
+              I am open to new job offers. I can start right away. If you have an open role, please send me an email. I am happy to share code samples and talk through my past work.
+            </p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4 border-t border-ink/20">
+              <div>
+                <h4 className="font-medium text-sm text-ink">Ready to Start</h4>
+                <p className="text-xs text-ink/70 mt-1">I can join your engineering team as soon as needed.</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-sm text-ink">Live Interviews</h4>
+                <p className="text-xs text-ink/70 mt-1">I am happy to take technical tests and walk through live code.</p>
+              </div>
+              <div>
+                <h4 className="font-medium text-sm text-ink">Flexible Hours</h4>
+                <p className="text-xs text-ink/70 mt-1">I live in Mumbai and can easily match your team work hours.</p>
+              </div>
+            </div>
+            <p className="text-xs text-ink/70 mt-6 pt-4 border-t border-ink/20">
+              You can also check my code on GitHub. Every project has a clear README file with setup steps.
+            </p>
           </div>
         </section>
       </main>

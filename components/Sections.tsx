@@ -108,16 +108,16 @@ export function About({ isPage = false }: { isPage?: boolean }) {
           </figure>
           <R className="space-y-5 text-lg text-ink/85 leading-relaxed">
             <p>
-              I build web applications that load fast, work smoothly, and rank at the top of search results.
+              I build web apps that load fast and rank well on search engines.
             </p>
             <p>
-              Currently, I work as a Software Engineer at Nexcore Alliance LLP in Mumbai while finishing my BSc in Information Technology. I build production web apps using modern TypeScript and Next.js. My daily focus is keeping Core Web Vitals green, optimizing API responses, and eliminating code bloat.
+              I work as a Software Engineer at Nexcore Alliance LLP in Mumbai while earning my degree in Information Technology. I build websites with TypeScript, React, and Next.js. My goal is to make every page fast, accessible, and easy to find online.
             </p>
             <p>
-              Search engines and AI answer engines need clean structure to understand web content. I implement structured data schemas (JSON-LD), semantic markup, and manifests so search bots and AI tools like ChatGPT and Perplexity can easily index and cite our platforms.
+              Good websites need clear structure. I use structured data, sitemaps, and clean HTML. This helps search engines like Google and AI bots like ChatGPT understand and index pages quickly.
             </p>
             <p>
-              Good engineering delivers real speed and high visibility. I combine clean full-stack coding with proven SEO and web performance strategies to help live digital products grow.
+              I believe in clean code and quick load times. By combining full-stack development with technical SEO, I help web products reach more people.
             </p>
           </R>
         </div>

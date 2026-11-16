@@ -55,28 +55,28 @@ export default function AboutUsPage() {
                 <span className="label text-cobalt font-mono">01 — Speed & Vitals</span>
                 <h3 className="font-display text-2xl">Sub-Second Execution</h3>
                 <p className="text-sm text-ink/80 leading-relaxed">
-                  Every millisecond of latency costs user engagement. I profile LCP, INP, and CLS metrics under throttled mobile conditions, keeping bundles lean and interactions instant.
+                  Fast sites keep visitors happy. I optimize page speed and Core Web Vitals on mobile devices. This keeps bundle sizes small and clicks fast.
                 </p>
               </div>
               <div className="border border-ink p-6 bg-paper space-y-3">
                 <span className="label text-cobalt font-mono">02 — Discoverability</span>
-                <h3 className="font-display text-2xl">AI & Search Engine Architecture</h3>
+                <h3 className="font-display text-2xl">Search & AI Discovery</h3>
                 <p className="text-sm text-ink/80 leading-relaxed">
-                  I treat Technical SEO and AI Answer Engine Optimization (AEO/GEO) as core architectural requirements, using JSON-LD schemas and semantic HTML to ensure high visibility.
+                  Search engines need clean structure. I add JSON-LD schemas and meta tags to every page. This helps Google and AI tools index content without errors.
                 </p>
               </div>
               <div className="border border-ink p-6 bg-paper space-y-3">
                 <span className="label text-cobalt font-mono">03 — Maintainability</span>
-                <h3 className="font-display text-2xl">Type-Safe & Clean Systems</h3>
+                <h3 className="font-display text-2xl">Clean Code</h3>
                 <p className="text-sm text-ink/80 leading-relaxed">
-                  Building with TypeScript, Next.js, and modular design patterns ensures codebases remain deterministic, readable, and easy to maintain as traffic and features grow.
+                  I write clean, type-safe code using TypeScript and Next.js. Clear code is easy to read and maintain as projects grow.
                 </p>
               </div>
               <div className="border border-ink p-6 bg-paper space-y-3">
                 <span className="label text-cobalt font-mono">04 — Reliability</span>
-                <h3 className="font-display text-2xl">End-to-End Validation</h3>
+                <h3 className="font-display text-2xl">Cross-Device Testing</h3>
                 <p className="text-sm text-ink/80 leading-relaxed">
-                  Every feature is validated across multiple viewports, network profiles, and edge-case API responses, preventing regressions before production releases.
+                  I test every page on phones, tablets, and laptops. I also test APIs to make sure data loads correctly under all network conditions.
                 </p>
               </div>
             </div>

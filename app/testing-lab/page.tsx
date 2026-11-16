@@ -52,22 +52,22 @@ export default function LabPage() {
             </div>
             <div className="md:col-span-8 space-y-6 text-base text-ink/80 leading-relaxed">
               <p>
-                In production web environments, intermittent glitches and unhandled edge cases degrade user experience and hurt search rankings. A bug reported without exact steps to reproduce is difficult to diagnose and impossible to reliably verify.
+                Software bugs hurt the user experience. They can also lower search rankings. When an issue happens, teams need clear steps to fix it. A bug report without exact steps is hard to solve.
               </p>
               <p>
-                The interactive lab above demonstrates the disciplined engineering workflow I follow: identifying the exact system state, isolating API payload discrepancies or timezone anomalies, asserting expected vs. actual outcomes, and writing automated checks to ensure regressions never return.
+                This lab shows how I find and fix bugs. First, I note the steps to repeat the issue. Next, I check the API data and the screen state. Then, I verify what went wrong against what was expected. Finally, I write an automated test so the bug never comes back.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 pt-2">
                 <div className="border border-ink p-4 bg-lav/30">
-                  <h3 className="font-display text-xl mb-1">Deterministic Reproduction</h3>
+                  <h3 className="font-display text-xl mb-1">Clear Steps</h3>
                   <p className="text-xs text-ink/75">
-                    Clear, numbered reproduction steps eliminate guesswork between development and deployment teams.
+                    Numbered steps help team members repeat the issue on their own machines quickly.
                   </p>
                 </div>
                 <div className="border border-ink p-4 bg-sage/30">
-                  <h3 className="font-display text-xl mb-1">Automated Assertions</h3>
+                  <h3 className="font-display text-xl mb-1">Automated Tests</h3>
                   <p className="text-xs text-ink/75">
-                    Stable assertions are converted into Playwright test scripts to protect critical user workflows in CI/CD.
+                    I write Playwright test scripts to keep key features safe during every code release.
                   </p>
                 </div>
               </div>
