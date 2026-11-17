@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Menu, X, ArrowUpRight, ArrowDown, ChevronDown, MapPin, CheckCircle2 } from "lucide-react";
 import { profile, projects, steps, journey, skills, recruiterFaqs, verifiedMetrics, type FAQItem } from "@/lib/data";
 import Lab from "./Lab";
-const Scanner = dynamic(() => import("./Scanner"), { ssr: false, loading: () => <div className="aspect-square" /> });
+import PerformanceDashboard from "./PerformanceDashboard";
 function R({ children, className = "", d = 0 }: { children: React.ReactNode; className?: string; d?: number }) { const rm = useReducedMotion(); return <motion.div className={className} initial={rm ? false : { opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: .5, delay: d }}>{children}</motion.div> }
 const Pending = ({ t = "To be added" }: { t?: string }) => <span className="text-ink/55 border-b border-dashed border-ink/30">{t}</span>;
 function Head({ n, t, sub, as = "h2" }: { n: string; t: string; sub?: string; as?: "h1" | "h2" }) {
@@ -21,7 +21,7 @@ function Head({ n, t, sub, as = "h2" }: { n: string; t: string; sub?: string; as
     </R>
   );
 }
-const links = [["About", "/aboutus"], ["Work", "/projects"], ["Testing Lab", "/testing-lab"], ["Journey", "/skills"], ["FAQ", "/#faq"], ["Contact", "/contactus"]];
+const links = [["About", "/aboutus"], ["Work", "/projects"], ["Journey", "/skills"], ["FAQ", "/#faq"], ["Contact", "/contactus"]];
 export function Nav() {
   const [o, setO] = useState(false); return <header className="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-ink/20"><nav aria-label="Primary" className="mx-auto max-w-7xl px-5 h-16 flex items-center justify-between">
     <Link href="/" className="font-display text-2xl">Saquib<span className="text-cobalt">.</span></Link>
@@ -63,7 +63,9 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <div className="md:col-span-5 md:translate-y-6 bg-lav/50 border border-ink p-4"><Scanner /></div>
+      <div className="md:col-span-5 md:translate-y-4">
+        <PerformanceDashboard />
+      </div>
     </div>
 
     {/* Performance, SEO & Engineering Metrics */}
@@ -208,18 +210,18 @@ export function LabSection({ isPage = false }: { isPage?: boolean }) {
   );
 }
 export function Approach() {
-  return <section className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="04 — Engineering approach" t="How I engineer, optimize & ship." />
+  return <section className="mx-auto max-w-7xl px-5 py-20 md:py-28"><Head n="03 — Engineering approach" t="How I engineer, optimize & ship." />
     <ol className="relative border-l border-ink ml-2 md:ml-[16.6%] space-y-8">{steps.map(([t, d], i) => <li key={t}><R><div className="pl-8 relative"><span className="absolute -left-[7px] top-2 h-3 w-3 bg-cobalt" /><span className="label text-cobalt">Step {String(i + 1).padStart(2, "0")}</span><h3 className="font-display text-3xl md:text-4xl">{t}</h3><p className="text-ink/70 max-w-lg">{d}</p></div></R></li>)}</ol></section>
 }
 export function Journey() {
   const cols: [string, string[], string][] = [["Using now", journey.using, "bg-sage"], ["Learning", journey.learning, "bg-lav"], ["Next", journey.next, "bg-peach"]];
-  return <section id="journey" className="mx-auto max-w-7xl px-5 pb-20 md:pb-28"><Head n="05 — Journey" t="From modern web development to AI-driven performance." sub="BSc IT degree and live software engineering in parallel. Technologies I use daily are kept apart from what I'm advancing next." />
+  return <section id="journey" className="mx-auto max-w-7xl px-5 pb-20 md:pb-28"><Head n="04 — Journey" t="From modern web development to AI-driven performance." sub="BSc IT degree and live software engineering in parallel. Technologies I use daily are kept apart from what I'm advancing next." />
     <div className="grid md:grid-cols-3 border border-ink">{cols.map(([t, l, c], i) => <R key={t} d={i * .1} className={`p-6 ${c} ${i ? "md:border-l border-t md:border-t-0 border-ink" : ""}`}><h3 className="font-display text-3xl">{t}</h3><ul className="mt-4 space-y-3">{l.map(x => <li key={x} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 bg-ink shrink-0" />{x}</li>)}</ul></R>)}</div></section>
 }
 export function Skills({ isPage = false }: { isPage?: boolean }) {
   return (
     <section id="skills" className="mx-auto max-w-7xl px-5 pb-20 md:pb-28">
-      <Head n="06 — Skills" t="Labels, not percentages." as={isPage ? "h1" : "h2"} />
+      <Head n="05 — Skills" t="Labels, not percentages." as={isPage ? "h1" : "h2"} />
       <div className="divide-y divide-ink/20 border-y border-ink">
         {skills.map((s) => (
           <R key={s.g}>
@@ -255,7 +257,7 @@ export function RecruiterFAQ() {
     <section id="faq" className="bg-paper border-t border-ink/20">
       <div className="mx-auto max-w-7xl px-5 py-20 md:py-28">
         <Head
-          n="07 — Recruiter & AI FAQ"
+          n="06 — Recruiter & AI FAQ"
           t="Questions recruiters & tech leads ask."
           sub="Direct, verified answers for engineering managers, tech recruiters, and AI search engines seeking Software Engineers specializing in Technical SEO, AEO, GEO & Web Performance."
         />
@@ -337,7 +339,7 @@ export function Contact({
   return (
     <footer id="contact" className="bg-cobalt text-paper">
       <div className="mx-auto max-w-7xl px-5 py-20 md:py-28">
-        <p className="label opacity-80">08 — Contact</p>
+        <p className="label opacity-80">07 — Contact</p>
         <Tag className="font-display text-[clamp(3rem,10vw,8rem)] leading-[.9] mt-4">
           {title}
         </Tag>

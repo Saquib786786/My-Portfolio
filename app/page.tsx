@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nav, Hero, About, Work, LabSection, Approach, Journey, Skills, RecruiterFAQ, Contact } from "@/components/Sections";
+import { Nav, Hero, About, Work, Approach, Journey, Skills, RecruiterFAQ, Contact } from "@/components/Sections";
 
 export const metadata: Metadata = {
   title: "Mohd Saquib | Software Engineer & Technical SEO",
@@ -42,7 +42,6 @@ export default function Page() {
         <Hero />
         <About />
         <Work />
-        <LabSection />
         <Approach />
         <Journey />
         <Skills />

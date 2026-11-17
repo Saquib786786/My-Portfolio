@@ -36,15 +36,11 @@
 - Implementing advanced Technical SEO, AEO, and GEO infrastructure to maximize visibility and indexing across search engines and AI citation engines.
 - Validating backend REST APIs with Postman for resilience, schema compliance, and low latency.
 
-### 2. Playwright Automation Lab
-- Automated testing and diagnostics repository built with Playwright and TypeScript.
-- Focus: Flake-free assertions, headless execution, CI integration, and deterministic test report generation.
-
-### 3. Workflow (Web, Backend & Mobile)
+### 2. Workflow (Web, Backend & Mobile)
 - Task-tracking system engineered across multiple viewports and network conditions.
 - Validated state synchronization, background app lifecycle, and API performance.
 
-### 4. Mandi Rate Tracker / Kisan Rate Saathi
+### 3. Mandi Rate Tracker / Kisan Rate Saathi
 - Information access platform for farmers and agricultural markets.
 - Optimized data fetching reliability, localization edge cases, and mobile responsiveness.
 

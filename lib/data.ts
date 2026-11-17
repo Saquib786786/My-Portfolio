@@ -77,7 +77,7 @@ export type Project = { id: string; name: string; status: string; kind: string; 
 export const projects: Project[] = [
   { id: "01", name: "Workflow", status: "Project", kind: "Web · Backend · Mobile", context: "A task-tracking application with web, backend and mobile components." },
   { id: "02", name: "Mandi Rate Tracker / Kisan Rate Saathi", status: "Project", kind: "Information access", context: "Explores mandi rates and farmer-focused access to information." },
-  { id: "03", name: "Playwright Automation Lab", status: "Work in progress · Learning", kind: "Test automation", context: "A growing collection of automated tests and reports, built while learning Playwright.", role: "Author — learning project", stack: ["Playwright", "TypeScript"] }];
+];
 export type Sev = "Critical" | "High" | "Medium" | "Low";
 export type Bug = { id: string; sev: Sev; title: string; area: string; steps: string[]; expected: string; actual: string };
 // DEMO DATA: illustrative bugs for a fictional task app. Not from any real project.
