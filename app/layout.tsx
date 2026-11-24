@@ -9,9 +9,9 @@ const s = Hanken_Grotesk({ subsets: ["latin"], variable: "--f-sans" });
 const m = JetBrains_Mono({ subsets: ["latin"], variable: "--f-mono" });
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://saquib-portfolio-dev.vercel.app";
-const defaultTitle = "Mohd Saquib | Software Engineer & Technical SEO";
+const defaultTitle = "Mohd Saquib | Technical SEO Specialist & Web Performance Engineer in Mumbai";
 const defaultDesc =
-  "Mohd Saquib: Software Engineer in Mumbai. Specializing in high-performance web systems, Core Web Vitals, Technical SEO, AEO, and GEO architecture.";
+  "Mohd Saquib Mohd Aarif: Technical SEO Engineer & Generative Engine Optimization (GEO/AEO) Specialist in Mumbai. Specializing in sub-second Next.js web systems, 100/100 Core Web Vitals, and JSON-LD Schema graphs.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -123,8 +123,8 @@ const structuredData = {
       "@type": "Person",
       "@id": `${baseUrl}/#person`,
       name: "Mohd Saquib Mohd Aarif",
-      alternateName: ["Mohd Saquib", "Saquib Aarif", "Mohd Saquib Software Engineer"],
-      jobTitle: "Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance",
+      alternateName: ["Mohd Saquib", "Saquib Aarif", "Mohd Saquib Technical SEO"],
+      jobTitle: "Technical SEO & Web Performance Engineer | GEO & AEO Specialist",
       description: defaultDesc,
       url: baseUrl,
       image: `${baseUrl}/saquib.jpg`,
@@ -157,26 +157,59 @@ const structuredData = {
         addressRegion: "Maharashtra",
         addressCountry: "IN",
       },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Mumbai",
+        containedIn: "Maharashtra, India",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Technical SEO & Web Performance Services",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Technical SEO & Schema.org JSON-LD Architecture in Mumbai",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Generative Engine Optimization (GEO & AEO)",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Next.js Core Web Vitals & Web Performance Tuning",
+            },
+          },
+        ],
+      },
       hasOccupation: {
         "@type": "Occupation",
-        name: "Software Engineer / Web Performance & Technical SEO Specialist",
+        name: "Technical SEO Engineer & Web Performance Specialist",
         occupationalCategory: "15-1252.00",
-        skills: "Software Engineering, Next.js, React, TypeScript, Technical SEO, AEO, GEO, AIO, Core Web Vitals, Web Performance, Schema.org, REST APIs",
+        skills: "Technical SEO, Generative Engine Optimization (GEO), AEO, Core Web Vitals, Next.js, React, TypeScript, Schema.org JSON-LD, REST APIs",
       },
       knowsAbout: [
+        "Technical SEO Specialist in Mumbai",
+        "Generative Engine Optimization Specialist Mumbai",
+        "GEO AEO Specialist Mumbai",
+        "Next.js Core Web Vitals Optimization",
+        "Technical SEO Engineer Next.js",
+        "Web Performance Engineer in Mumbai",
+        "Schema.org JSON-LD Expert Mumbai",
         "Software Engineering",
-        "Technical SEO",
         "Answer Engine Optimization (AEO)",
-        "Generative Engine Optimization (GEO)",
-        "AI Engine Optimization (AIO)",
-        "Web Performance Engineering",
         "Core Web Vitals (LCP, CLS, INP)",
-        "JSON-LD Schema.org Architecture",
         "Semantic Web & llms.txt",
         "Next.js & React",
         "TypeScript & JavaScript",
         "REST API Optimization & Postman",
-        "Web Performance in Mumbai",
       ],
     },
     {

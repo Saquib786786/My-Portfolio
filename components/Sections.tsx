@@ -36,17 +36,19 @@ export function Hero() {
       <div className="md:col-span-7">
         <div className="inline-flex items-center gap-2 border border-ink bg-paper px-3 py-1.5 text-xs font-mono mb-4">
           <span className="h-2 w-2 rounded-full bg-cobalt animate-pulse" />
-          <span className="uppercase tracking-wider">Software Engineer · Technical SEO, AEO/GEO & Web Performance</span>
+          <span className="uppercase tracking-wider">Technical SEO & Web Performance Specialist in Mumbai · GEO & AEO</span>
         </div>
         <h1 className="font-display text-[clamp(3.4rem,10vw,9rem)] leading-[.88] tracking-tight">I <span className="text-cobalt italic underline decoration-peach decoration-[.05em] underline-offset-[.08em]">build</span><br />software<br />to run <em>fast & rank.</em></h1>
-        <p className="label text-cobalt mt-4 font-mono">Mohd Saquib Mohd Aarif — Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance</p>
-        <p className="mt-5 max-w-lg text-lg text-ink/80">Software Engineer at Nexcore Alliance LLP (Mumbai). Engineering live production web applications, optimizing sub-second Web Performance & Core Web Vitals, and implementing advanced Technical SEO, AEO, GEO, and AI Engine Optimization.</p>
+        <p className="label text-cobalt mt-4 font-mono">Mohd Saquib Mohd Aarif — Technical SEO Specialist & Web Performance Engineer in Mumbai</p>
+        <p className="mt-5 max-w-lg text-lg text-ink/80">
+          Based in Mumbai and engineering at Nexcore Alliance LLP. I build high-speed Next.js web applications, optimize sub-second Core Web Vitals (LCP &lt; 1s, zero CLS), and architect Generative Engine Optimization (GEO & AEO) to trigger top rankings and Google AI Overview citations.
+        </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/projects" className="bg-cobalt text-paper px-6 py-3 inline-flex items-center gap-2 hover:bg-ink transition">
-            Explore projects <ArrowDown size={16} />
+            Case studies & projects <ArrowDown size={16} />
           </Link>
-          <a href={profile.resume} className="border border-ink px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition">
-            View resume <ArrowUpRight size={16} />
+          <a href="/contactus" className="border border-ink bg-peach px-6 py-3 inline-flex items-center gap-2 hover:bg-ink hover:text-paper transition font-medium">
+            Request Free Audit <ArrowUpRight size={16} />
           </a>
           {profile.linkedin && (
             <a
@@ -58,8 +60,8 @@ export function Hero() {
               LinkedIn <ArrowUpRight size={16} />
             </a>
           )}
-          <a href="#faq" className="border border-ink/50 px-6 py-3 inline-flex items-center gap-2 hover:border-ink transition text-ink">
-            Recruiter FAQ
+          <a href={profile.resume} className="border border-ink/50 px-6 py-3 inline-flex items-center gap-2 hover:border-ink transition text-ink">
+            Resume <ArrowUpRight size={16} />
           </a>
         </div>
       </div>
@@ -110,16 +112,16 @@ export function About({ isPage = false }: { isPage?: boolean }) {
           </figure>
           <R className="space-y-5 text-lg text-ink/85 leading-relaxed">
             <p>
-              I build web apps that load fast and rank well on search engines.
+              I am a <strong>Technical SEO specialist and web performance engineer based in Mumbai</strong>. I engineer web platforms that load in milliseconds and rank at the top of Google and generative AI engines.
             </p>
             <p>
-              I work as a Software Engineer at Nexcore Alliance LLP in Mumbai while earning my degree in Information Technology. I build websites with TypeScript, React, and Next.js. My goal is to make every page fast, accessible, and easy to find online.
+              At Nexcore Alliance LLP in Mumbai, I develop production web software using TypeScript, React, and Next.js. My work bridges software engineering with Core Web Vitals optimization, reducing Largest Contentful Paint (LCP) under 1.0s and achieving zero Cumulative Layout Shift (CLS).
             </p>
             <p>
-              Good websites need clear structure. I use structured data, sitemaps, and clean HTML. This helps search engines like Google and AI bots like ChatGPT understand and index pages quickly.
+              Modern discovery requires more than keywords. I architect multi-entity Schema.org JSON-LD graphs, robots crawl governance, and <code>llms.txt</code> manifests for Generative Engine Optimization (GEO & AEO). This helps traditional crawlers (Google, Bing) and AI search agents (Google AI Overviews, Perplexity, ChatGPT) parse and cite web entities with high authority.
             </p>
             <p>
-              I believe in clean code and quick load times. By combining full-stack development with technical SEO, I help web products reach more people.
+              Whether engineering Next.js frontend architectures or performing in-depth technical search audits, I help businesses scale organic search traffic and AI visibility.
             </p>
           </R>
         </div>

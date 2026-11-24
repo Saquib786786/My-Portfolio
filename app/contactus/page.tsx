@@ -50,7 +50,7 @@ export default function ContactUsPage() {
               Let&apos;s build something <em className="text-cobalt">fast & discoverable.</em>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-ink/80 leading-relaxed max-w-2xl">
-              I am looking for new roles as a Software Engineer and Frontend Developer. I build fast websites and help them rank well on search engines. Feel free to contact me for jobs or project work.
+              "Available for full-time Technical SEO / Software Engineering roles & select freelance consulting (Core Web Vitals tuning, GEO/AEO implementation & Technical Audits)."
             </p>
           </div>
 

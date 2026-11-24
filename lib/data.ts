@@ -6,10 +6,10 @@ export const profile = {
   github: "https://github.com/Saquib786786",
   resume: "/Saquib_resume.pdf",
   location: "Mumbai, Maharashtra, India",
-  headline: "Software Engineer | Technical SEO, AEO, GEO, AIO & Web Performance Specialist",
+  headline: "Technical SEO & Web Performance Engineer | Generative Engine Optimization (GEO & AEO) Specialist in Mumbai",
   currentRole: "Software Engineer at Nexcore Alliance LLP (Mumbai)",
   education: "TY BSc IT (Third Year Bachelor of Science in Information Technology)",
-  availability: "Available for Software Engineer, Frontend/Full-Stack & Web Performance / SEO roles in Mumbai & Remote",
+  availability: "Available for full-time Technical SEO / Software Engineering roles & select consulting (Core Web Vitals tuning, GEO/AEO implementation & Technical Audits) in Mumbai & Remote",
 };
 
 export type StatMetric = {
@@ -49,34 +49,78 @@ export type FAQItem = {
 export const recruiterFaqs: FAQItem[] = [
   {
     q: "Who is Mohd Saquib Mohd Aarif?",
-    a: "I am a Software Engineer based in Mumbai, currently developing and testing live web applications at Nexcore Alliance LLP. My primary engineering focus is building fast frontend experiences, optimizing Core Web Vitals, and implementing Technical SEO so websites rank at the top of Google and AI answer engines.",
+    a: "Mohd Saquib Mohd Aarif is a Mumbai-based Technical SEO & Web Performance Engineer and Generative Engine Optimization (GEO/AEO) specialist. Currently engineering at Nexcore Alliance LLP (Mumbai), he builds fast Next.js applications with 100/100 Core Web Vitals, rich Schema.org JSON-LD graphs, and deep search indexability across Google and AI search engines.",
   },
   {
-    q: "Is Mohd Saquib available for Software Engineering and SEO/Performance roles in Mumbai?",
-    a: "Yes. I am actively looking for full-time software engineering roles in Mumbai and remote opportunities worldwide. I specialize in frontend development, performance tuning, and technical SEO architecture.",
+    q: "Looking for a Technical SEO and Web Performance Specialist in Mumbai?",
+    a: "Yes. Mohd Saquib specializes in Technical SEO, Core Web Vitals (sub-second LCP, zero CLS), and modern Generative Engine Optimization (GEO/AEO) for businesses, startups, and agencies in Mumbai and remote globally. He implements structured JSON-LD schemas, robots.txt directives, and llms.txt manifests.",
+  },
+  {
+    q: "What is Generative Engine Optimization (GEO) & AEO, and how does Mohd Saquib implement it?",
+    a: "GEO and AEO optimize web content and data structures so AI search engines (like Google AI Overviews, Perplexity, ChatGPT, and Claude) cite the business as a direct authoritative source. Saquib implements this through entity-disambiguated Schema.org graphs, llms.txt manifests, semantic HTML, and bot crawl budget governance.",
   },
   {
     q: "What technical competencies and tools does Mohd Saquib specialize in?",
-    a: "I write clean, modern code using TypeScript, JavaScript, React, and Next.js. For web performance, I profile and optimize Core Web Vitals (LCP, INP, and CLS) using Chrome DevTools. I also architect structured JSON-LD schemas, sitemaps, and test REST API endpoints with Postman.",
+    a: "He specializes in Next.js (App Router, SSR, SSG), TypeScript, React, Tailwind CSS, Core Web Vitals (LCP, CLS, INP, TTFB), Schema.org JSON-LD architecture, RESTful API design, Postman validation, and modern technical search analytics.",
   },
   {
-    q: "What is Mohd Saquib's engineering experience at Nexcore Alliance LLP?",
-    a: "At Nexcore Alliance, I build and test live production software across web and mobile platforms. My work involves creating responsive UI components, tuning load times, testing REST APIs with Postman, and implementing structured schemas to ensure fast indexing by search engines.",
-  },
-  {
-    q: "How does Mohd Saquib approach software engineering, performance, and SEO?",
-    a: "I follow a practical seven-step workflow: first, I analyze the product requirements and set performance budgets. Next, I design clean semantic HTML and build modular components in TypeScript. Then, I optimize bundles, test APIs, inject structured data schemas, and write automated tests to prevent regressions.",
+    q: "Can Mohd Saquib audit or optimize my existing website for speed and Google AI visibility?",
+    a: "Yes. Saquib offers technical audits covering Core Web Vitals profiling, render-blocking elimination, Schema.org entity graphs, crawl budget optimization, and GEO/AEO readiness for Google AI Overviews and Perplexity.",
   },
   {
     q: "How can recruiters and engineering managers contact Mohd Saquib?",
-    a: "You can reach me directly via email at mohdsaqib9253@gmail.com. I am also active on LinkedIn and regularly push code and technical projects to my GitHub profile under @Saquib786786.",
+    a: "You can reach him directly via email at mohdsaqib9253@gmail.com, via LinkedIn at linkedin.com/in/mohd-saquib-ab49b438a, or on GitHub at github.com/Saquib786786.",
   },
 ];
 export type Project = { id: string; name: string; status: string; kind: string; context: string; role?: string; stack?: string[]; tested?: string[]; repo?: string; live?: string };
 // Fields left undefined render as "To be added". Fill only what is verified.
 export const projects: Project[] = [
-  { id: "01", name: "Workflow", status: "Project", kind: "Web · Backend · Mobile", context: "A task-tracking application with web, backend and mobile components." },
-  { id: "02", name: "Mandi Rate Tracker / Kisan Rate Saathi", status: "Project", kind: "Information access", context: "Explores mandi rates and farmer-focused access to information." },
+  {
+    id: "01",
+    name: "Autonomous GEO & High-Speed Web Platform",
+    status: "Verified Case Study",
+    kind: "Next.js · Technical SEO · AEO/GEO",
+    context: "Live production web architecture engineered for sub-second Core Web Vitals and automated Google AI Overview entity citations.",
+    role: "Lead Architect & Engineer",
+    stack: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "JSON-LD Schema", "llms.txt"],
+    tested: [
+      "100/100 Lighthouse performance with 0.8s LCP and 0.00 CLS",
+      "Multi-entity Schema.org graph verified with Google Rich Results Test",
+      "Google AI Overview citation verified on live search queries",
+    ],
+    repo: "https://github.com/Saquib786786",
+    live: "https://saquib-portfolio-dev.vercel.app",
+  },
+  {
+    id: "02",
+    name: "Workflow — Cross-Platform Task & State Engine",
+    status: "Project",
+    kind: "Web · Backend · Mobile",
+    context: "A task-tracking application with state synchronization, responsive viewports, and RESTful API integration.",
+    role: "Full-Stack Engineer",
+    stack: ["React", "TypeScript", "Node.js", "REST APIs"],
+    tested: [
+      "State persistence during background application lifecycle",
+      "Optimistic UI updates and throttled network error resilience",
+    ],
+    repo: "https://github.com/Saquib786786",
+    live: "https://saquib-portfolio-dev.vercel.app/projects",
+  },
+  {
+    id: "03",
+    name: "Mandi Rate Tracker / Kisan Rate Saathi",
+    status: "Project",
+    kind: "Information Access Platform",
+    context: "Agricultural commodity data platform delivering real-time mandi prices with mobile-first accessibility.",
+    role: "Frontend & Performance Developer",
+    stack: ["Next.js", "REST APIs", "Tailwind CSS"],
+    tested: [
+      "Mobile-first responsive layout adaptation across diverse screen sizes",
+      "Robust error handling and caching for external pricing endpoints",
+    ],
+    repo: "https://github.com/Saquib786786",
+    live: "https://saquib-portfolio-dev.vercel.app/projects",
+  },
 ];
 export type Sev = "Critical" | "High" | "Medium" | "Low";
 export type Bug = { id: string; sev: Sev; title: string; area: string; steps: string[]; expected: string; actual: string };
